@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<uddi__address__list> 
+  <!--测试库配置
+    <uddi__address id="default">
+    <name>localserver</name>
+    <logicName>default</logicName>
+    <type>http</type>
+    <description>uddi-config.xml at " Work Space"</description>
+    <uddiHost>10.249.5.5</uddiHost>
+    <uddiPort>8081</uddiPort>
+    <uddiWebContext>bps</uddiWebContext>
+    <uddiUserID>bps</uddiUserID>
+    <uddiPassword>000000</uddiPassword>
+    <uddiAdminPort>6200</uddiAdminPort>
+  </uddi__address>
+    -->
+  <uddi__address id="default"><!-- 集成环境配置 -->
+    <name>localserver</name>
+    <logicName>default</logicName>
+    <type>http</type>
+    <description>uddi-config.xml at " Work Space"</description>
+    <uddiHost>10.249.6.86</uddiHost>
+    <uddiPort>8080</uddiPort>
+    <uddiWebContext>bps</uddiWebContext>
+    <uddiUserID>bps</uddiUserID>
+    <uddiPassword>000000</uddiPassword>
+    <uddiAdminPort>6200</uddiAdminPort>
+  </uddi__address>
+</uddi__address__list>

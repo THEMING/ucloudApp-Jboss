@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="<%=path%>/css/ext/ext-all.css"></link>
+	<link rel="stylesheet" type="text/css" href="<%=path%>/css/ext/ucloud.css"></link>
+    <script type="text/javascript" language="javascript" src="<%=path%>/js/ext/ext-base.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext/ext-all.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext/ext-lang-zh_CN.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/global.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/EditorGrid.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/Toolbar.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/Tree.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/Form.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/Window.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/Viewport.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/ButtonTextField.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/ComboxTree.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/ComboxList.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/FileUploadField.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext.component/ui/MainTabForm.js"></script>
+	<script>
+	    var __ctxPath="<%=path%>";
+		var _CONTEXT="<%=basePath%>";
+		var _frameId='<%=request.getParameter("frameId")%>';
+		var _cssPath="ext-all";
+		if(parent._cssPath){
+	      Ext.util.CSS.swapStyleSheet('window',_CONTEXT+'/css/ext/' + parent._cssPath+ '.css');
+		}
+		//document.oncontextmenu=function(){return false;}//屏蔽所有右键 
+	</script>
+    <noscript><iframe width="100%" height="0px" src=*.html></iframe></noscript>
+</head>
+</html>

@@ -1,0 +1,45 @@
+.form{font-family:"Calibri"; font-size:15px;}   
+.div{
+	width:700px;
+	height:150px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  word-break:break-all;
+}
+.wide-div{
+	width:800px;
+	height:150px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  word-break:break-all;
+}
+.horizon-div{
+	width:1050px;
+	height:150px;
+  overflow-y:scroll;
+  overflow-x:scroll;
+  word-break:break-all;
+}
+.log-div{
+	width:700px;
+	height:300px;
+  overflow-y:scroll;
+  word-break:break-all;
+}
+.span{
+	font-size:20px;
+	color:'red';
+}
+.loaddiv{
+	display:none;
+	position:absolute;
+	left:0;
+	width:100%;
+	height:100%;
+	top:0;
+	background:#111;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	font-family:"Calibri"; 
+	font-size:15px;
+}

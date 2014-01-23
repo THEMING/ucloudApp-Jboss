@@ -1,0 +1,99 @@
+.dragEl {
+	position: absolute;
+	background: #C00;
+	width: 7px;;
+	height: 7px;;
+	z-index: 5;;
+	font-size: 0;
+}
+
+.dragEl-changeColor {
+	background-color: #00F;
+}
+
+.dragEl-t {
+	cursor: n-resize;
+	top: -4px;
+	left: 0;
+	width: 100% !important;
+}
+
+.dragEl-tc {
+	cursor: n-resize;;
+	top: -4px;;
+	left: 50%;;
+	margin-left: -4px;
+}
+
+.dragEl-b {
+	cursor: s-resize;;
+	bottom: -4px;
+	left: 0;
+	width: 100%;
+	!
+	important
+}
+
+.dragEl-bc {
+	cursor: s-resize;;
+	bottom: -4px;;
+	left: 50%;;
+	margin-left: -4px;
+}
+
+.dragEl-l {
+	cursor: w-resize;;
+	left: -4px;;
+	top: 0;;
+	height: 100%;
+	!
+	important
+}
+
+.dragEl-lc {
+	cursor: w-resize;;
+	left: -4px;;
+	top: 50%;;
+	margin-top: -4px;
+}
+
+.dragEl-r {
+	cursor: e-resize;;
+	right: -4px;;
+	top: 0;;
+	height: 100%;
+	!
+	important
+}
+
+.dragEl-rc {
+	cursor: e-resize;;
+	right: -4px;;
+	top: 50%;;
+	margin-top: -4px;
+}
+
+.dragEl-tl {
+	cursor: nw-resize;;
+	left: -4px;;
+	top: -4px;
+}
+
+.dragEl-tr {
+	cursor: ne-resize;;
+	right: -4px;;
+	top: -4px;
+}
+
+.dragEl-bl {
+	cursor: sw-resize;;
+	left: -4px;;
+	bottom: -4px;
+}
+
+.dragEl-br {
+	cursor: se-resize;;
+	right: -4px;
+	background: #ff00cc !important;
+	bottom: -4px;
+}

@@ -1,0 +1,118 @@
+/*
+Uploadify v2.1.0
+Release Date: August 24, 2009
+
+Copyright (c) 2009 Ronnie Garcia, Travis Nickels
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+.uploadifyQueueItem {
+	font: 10px "黑体";
+	border: 0px;
+	border-bottom: 1px dashed #cccccc;
+/* 	background-color: #F5F5F5; */
+	margin: 5px;
+	padding: 5px;
+	width:100%;
+	height: 34px !important;
+}
+.uploadifyError {
+	border: 2px solid #FBCBBC !important;
+	background-color: #FDE5DD !important;
+}
+.uploadifyQueueItem .cancel {
+	float: right;
+}
+.uploadifyProgress {
+/* 	background-color: #F5F5F5; */
+	border: 1px solid #C5C5C5;
+	margin-top: 8px;
+	width: 86%;
+	font: 14px;
+	color: green;
+	padding:1px;
+	float: left;
+}
+.uploadifyProgressBar {
+	background: url(../../resources/images/df/uploadifyProgressBar.gif);
+	width: 1px;
+	height: 6px;
+}
+/* ========== 文件类型图标 =========== */
+.uploadExcel{ background:url(../../resources/images/df/fileExcel.gif);}
+.uploadOther{ background:url(../../resources/images/df/fileOther.gif);}
+.uploadPPT{ background:url(../../resources/images/df/filePPT.gif);}
+.uploadTxt{ background:url(../../resources/images/df/fileTxt.gif);}
+.uploadWord{ background:url(../../resources/images/df/fileWord.gif);}
+.uploadPDF{ background:url(../../resources/images/df/filePDF.gif);}
+.uploadImg{ background:url(../../resources/images/df/fileImg.gif);}
+.uploadVisio{ background:url(../../resources/images/df/fileVisio.gif);}
+
+/* ========== 弹出框 =========== */
+.uploadtanchu{ margin:0px auto;}
+.uploadtanchudiv_alpha{background:#d3d3d3; filter:alpha(opacity=30);opacity:0.3;position: absolute; }
+.uploadtanchudiv{border: 1px solid #bbbbbb;background: url(../../resources/images/df/tanchu_top_t.jpg) repeat-x;	font-size: 12px;position:relative;left: 6px;top: 6px;}
+.uploadtanchudivspan{ color:#3f3f3f; font-family:"微软雅黑"; font-size:14px; background:url(../../resources/images/df/tanchu_onload.png) 10px 10px no-repeat; padding-left:37px; line-height:35px; font-weight:bold;text-shadow:1px 1px 1px #ffffff; float:left;}
+.uploadtanchudivi{ background:url(../../resources/images/df/closeX.png) no-repeat; width:23px; height:13px; float:right; margin-top:11px; cursor:pointer;}
+.uploadtanchudiv_nr{ clear:both; padding:20px; background:#FFF;}
+.uploadtanchudiv_tit{ color:#d7191f; font-size:14px; font-weight:bold;}
+.uploadtanchudiv_wz{ color:#3f3f3f; height:95px; margin-top:20px;margin-left:30px;}
+.uploadtanchudiv_inp{width:82px;margin:0 auto;margin-top:5px;}
+.uploadtanchu_inputcla{ background:url(../../resources/images/df/redbutton.png) no-repeat; border:0px; width:82px; height:26px; cursor:pointer; font-size:14px; color:#ffffff;font-family: "微软雅黑";text-shadow:2px 2px 1px #000000;letter-spacing:10px;}
+
+/* ========== 按钮 =========== */
+.uploadredbutton {border:1px solid #9C1215;border-bottom:2px solid #9C1215;border-radius: 5px;background:url(../../resources/images/df/redbutton1.gif) repeat-x;  width:82px; height:26px; cursor:pointer; font-size:12px; color:#ffffff;font-family: "宋体";text-shadow:2px 2px 1px #000000;text-align:center;}
+.uploadgraybutton {border:1px solid #999999;border-radius: 5px;background:url(../../resources/images/df/graybutton1.gif) repeat-x;  width:82px; height:26px; cursor:pointer; font-size:12px; color:#333333;font-family: "宋体";text-shadow:2px 2px 1px #ffffff;text-align:center;}
+/* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0);  opacity: 0; */
+#uploadifyUploader {
+	width: 82px !important;
+	height:26px !important;
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0);  opacity: 0;
+	 
+}
+.dfaddfilediv{
+	width: auto;height: auto;border:0px solid #BBBBBB;cursor: pointer;
+	background: url("../../resources/images/df/fileupload.png") no-repeat;
+	background-position: right center;
+}
+#dfuploadaddfile{
+	margin-top:0px;margin-right:18px;
+	width: 83px;
+}
+
+.dfuploadbuttondiv {
+	border: 0px solid #BBBBBB;
+	margin: 0px;margin-top: 10px;*width: 375px;
+	/* width: 362px; */
+}
+
+*+html .dfuploadbuttondiv {
+	border: 0px solid #BBBBBB;
+	margin: 0px;margin-top: 10px;*width: 374px;text-align: center;
+	/* width: 362px; */
+}
+.dfuploadbuttontable {
+	border: 0px solid #BBBBBB;
+	border-collapse:collapse;
+}
+.dfuploadbuttontable td{
+	border: 0px solid #BBBBBB;
+	overflow: hidden;
+}
+

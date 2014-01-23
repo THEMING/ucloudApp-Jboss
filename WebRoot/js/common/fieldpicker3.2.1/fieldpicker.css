@@ -1,0 +1,93 @@
+.field-picker-title{
+color:#A8A8B7;
+font-size:24px;
+line-height: 0.9;
+}
+.field-picker-table a{
+font-family:"宋体";
+white-space: nowrap;
+font-size:12px;
+text-decoration: none;
+}
+.field-picker-table td{
+padding:0 5px;
+}
+
+.field-picker-indexdiv{
+width:100%;
+height:32px;
+background-color:#F4F4F4;
+line-height: 2;
+}
+.field-picker-indexdiv a{
+margin-left:10px;
+font-size:14px;
+font-weight:bold;
+color:#3F3F3F;
+white-space: nowrap;
+text-decoration: none;
+}
+.field-picker-indexdiv a:hover,.field-picker-table a:hover{
+text-decoration: underline;
+}
+.field-picker-table tr{
+ height:18px;
+}
+
+.field-picker-table .field-picker-smalltitle{
+font-size:14px;
+font-weight:bold;
+}
+.field-pick-splitlasttr{
+border-bottom:1px dashed #BBBBBB;
+}
+.field-pick-splitlasttr td{
+padding-bottom:5px; 
+ border-bottom: 1px dashed #BBBBBB;
+}
+.field-pick-splitfirsttr td{
+padding-top:5px; 
+}
+.field-picker-item{
+margin-left:5px;
+float: left;
+}
+.field-picker-itemcheck{
+color:#FFFFFF;
+background-color:#D7191F;
+}
+.field-picker-itemuncheck{
+color:#3F3F3F;
+background-color:transparent;
+}
+	
+	
+.x-window-header-text-default {
+    color: #333333;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 21px;
+    text-shadow: 1px 1px #FFFFFF;
+}	
+.x-tool {
+   background-image:url(images/tool-sprites.gif);
+}
+.x-window-tl{
+  background-image: url("images/panel_tab.png");
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #BBBBBB;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 1px 0 0 #FFFFFF inset, 1px 0 0 0 #FFFFFF inset;
+    height: 30px;
+}
+
+.x-window-tr,.x-window-tc,.x-window-ml,.x-window-mr,.x-window-bl,.x-window-br,.x-window-bc{
+    background-image:none;   
+}
+.x-window-ml,.x-window-mr,.x-window-bl,.x-window-br,.x-window-bc{
+    background-color:#FFFFFF; 
+}
+.x-window-mc{
+border: 0px solid;
+background-color:#FFFFFF;
+}

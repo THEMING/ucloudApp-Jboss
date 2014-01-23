@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 处理输入框网格 */
+.x-form-text{
+    background:transparent;
+    background-color:#ffffff;
+    height:30px !important;
+    border-left-width:0px;
+    border-right-width:0px ;
+    border-top-width:0px ;
+    border-bottom-width:0px ;
+   /*  padding-top:8px; 
+    margin-top:8px; */
+}
+/*输入框内字体  */
+/* .x-form-text{
+	vertical-align: middle;
+	width: 100%;
+	font-size: 12;
+    vertical-align: middle;
+	font-family:微软雅黑 ;
+	font-size:12;
+	text-align:center; 
+} */
+
+/* label.x-form-item-label{
+    border-style:solid;
+    border-color:#333333;
+    border-top-width:0px;
+    border-bottom-width:0px;
+    border-left-width:0px;
+    border-right-width:0px;
+} 
+TEXTAREA.x-form-field{
+    border-width:0px;
+    background:transparent;
+    line-height:1.5;
+    overflow: auto;
+}*/  
+/*label字体  */
+.x-label-text{
+	vertical-align: middle;
+	width: 100%;
+	font-size: 12;
+    vertical-align: middle;
+    line-height: 30px;
+    height:30px ; 
+    font-family: "微软雅黑" ;
+    text-align:center;
+    font-weight: bold;
+}
+
+/*form 的网格*/
+.x-table-layout{
+    border:solid #bbbbbb;
+    border-left-width:0px;
+    border-right-width:1px ;
+    border-top-width:1px ;
+    border-bottom-width:0px ;
+}
+
+.x-table-layout-cell{
+    border:solid #bbbbbb;
+    border-left-width:1px;
+    border-right-width:0px ;
+    border-top-width:0px ;
+    border-bottom-width:1px ;
+}
+.x-panel-body-noheader, .x-panel-mc .x-panel-body{
+	border:0px;
+}
+.x-panel-body{
+	border:0px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu id="0" name="系统菜单">
+	<menu id="10" name="测试卡管理">
+		<menu id="100" name="工单管理">
+			<menu id="1000" name="测试卡工单申请">e19/testCardOrderApply.jsp</menu>
+			<menu id="1001" name="待办任务">e19/myUndoTask.jsp</menu>
+			<menu id="1003" name="已办任务">e19/myWorkedTask.jsp</menu>
+			<menu id="1002" name="历史工单查询">e19/testCardOrderQryHis.jsp</menu>
+		</menu>
+		<menu id="101" name="测试卡管理">
+			<menu id="2000" name="测试卡管理">e19/testCardManage.jsp</menu>
+			<menu id="2001" name="测试卡查询">e19/testCardQry.jsp</menu>
+			<menu id="2002" name="测试卡清查">e19/testCardCheck.jsp</menu>
+			<menu id="2003" name="测试卡统计">e19/testCardStatis.jsp</menu>
+		</menu>
+		<menu id="102" name="基础数据维护">
+			<menu id="3001" name="私有属性模板配置">e19/tciPriAttTemplateConfig.jsp</menu>
+			<menu id="3002" name="定时任务">e19/timertask/timerTask.jsp</menu>
+		</menu>
+    </menu>
+</menu>

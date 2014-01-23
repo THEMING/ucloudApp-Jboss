@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root id="0" name="枚举">
+    <!-- 公共枚举类型 EOM(0)-->
+    <!-- enumItemId为枚举类型 -->
+    <enumItem id="WO_STATUS" enumItemId="0" enumItemCode="WO_STATUS" enumIteName="工单状态">
+        <!-- enumValueId为枚举值的id，enumValueName为显示的名 -->
+        <enumValue id="EOM_1" enumValueId="1" enumValueCode="DRAFT" enumValueName="起草"></enumValue>
+        <enumValue id="EOM_2" enumValueId="2" enumValueCode="PROCESSING" enumValueName="处理中"></enumValue>
+        <enumValue id="EOM_3" enumValueId="3" enumValueCode="REVOKE" enumValueName="已撤销"></enumValue>
+        <enumValue id="EOM_4" enumValueId="4" enumValueCode="SUSPENDED" enumValueName="已挂起"></enumValue>
+        <enumValue id="EOM_5" enumValueId="5" enumValueCode="DENIED" enumValueName="已驳回"></enumValue>
+        <enumValue id="EOM_6" enumValueId="6" enumValueCode="DONE" enumValueName="已完成"></enumValue>
+        <enumValue id="EOM_7" enumValueId="7" enumValueCode="FILED" enumValueName="已归档"></enumValue>       
+    </enumItem>    
+    <enumItem id="ATTACHMENT_FORMAT" enumItemId="1" enumItemCode="ATTACHMENT_FORMAT" enumIteName="附件格式">
+        <enumValue id="EOM_11" enumValueId="1" enumValueCode="WORD" enumValueName="WORD文档"></enumValue>
+        <enumValue id="EOM_12" enumValueId="2" enumValueCode="ECXEL" enumValueName="EXCEL文档"></enumValue>
+        <enumValue id="EOM_13" enumValueId="3" enumValueCode="PDF" enumValueName="PDF文档"></enumValue>
+        <enumValue id="EOM_14" enumValueId="4" enumValueCode="IMAGE" enumValueName="图片"></enumValue>
+        <enumValue id="EOM_15" enumValueId="5" enumValueCode="OTHER" enumValueName="其他"></enumValue>     
+    </enumItem>
+    <enumItem id="SPECIALITY" enumItemId="2" enumItemCode="SPECIALITY" enumIteName="专业域">
+        <enumValue id="EOM_21" enumValueId="1" enumValueCode="DATA" enumValueName="数据"></enumValue>
+        <enumValue id="EOM_22" enumValueId="2" enumValueCode="EXCHANGE" enumValueName="交换"></enumValue>
+        <enumValue id="EOM_23" enumValueId="3" enumValueCode="TRANSMISSION" enumValueName="传输"></enumValue>
+    </enumItem>
+    <enumItem id="URGENCY_LEVEL" enumItemId="3" enumItemCode="URGENCY_LEVEL" enumIteName="缓急">
+        <enumValue id="EOM_31" enumValueId="1" enumValueCode="1" enumValueName="一般"></enumValue>
+        <enumValue id="EOM_32" enumValueId="2" enumValueCode="2" enumValueName="特急"></enumValue>
+        <enumValue id="EOM_33" enumValueId="3" enumValueCode="3" enumValueName="紧急"></enumValue>
+    </enumItem>
+    <enumItem id="SPECIALITY_TYPE" enumItemId="4" enumItemCode="SPECIALITY_TYPE" enumIteName="专业类型">
+        <enumValue id="EOM_41" enumValueId="1" enumValueCode="WIRELESS" enumValueName="无线"></enumValue>
+        <enumValue id="EOM_42" enumValueId="2" enumValueCode="MOBILE" enumValueName="移动"></enumValue>
+        <enumValue id="EOM_43" enumValueId="3" enumValueCode="EXCHANGE" enumValueName="交换"></enumValue>
+        <enumValue id="EOM_44" enumValueId="3" enumValueCode="TRANSMISSION" enumValueName="传输"></enumValue>
+        <enumValue id="EOM_45" enumValueId="3" enumValueCode="ATM" enumValueName="ATM"></enumValue>
+    </enumItem> 
+	<enumItem id="CHECK_LEVEL" enumItemId="5" enumItemCode="CHECK_LEVEL" enumIteName="考核级别">
+	    <enumValue id="EOM_51" enumValueId="1" enumValueCode="GROUP" enumValueName="集团"></enumValue>
+	    <enumValue id="EOM_52" enumValueId="2" enumValueCode="PROVINCE" enumValueName="省份"></enumValue>
+	    <enumValue id="EOM_53" enumValueId="3" enumValueCode="CITY" enumValueName="地市"></enumValue>
+	</enumItem> 
+    <enumItem id="DATA_TYPE" enumItemId="6" enumItemCode="DATA_TYPE" enumIteName="数据类型">
+        <enumValue id="EOM_61" enumValueId="1" enumValueCode="VARCHAR" enumValueName="字符"></enumValue>
+        <enumValue id="EOM_62" enumValueId="2" enumValueCode="INT" enumValueName="整型"></enumValue> 
+        <enumValue id="EOM_63" enumValueId="2" enumValueCode="FLOAT" enumValueName="浮点型"></enumValue> 
+        <enumValue id="EOM_64" enumValueId="2" enumValueCode="DATE" enumValueName="日期"></enumValue> 
+        <enumValue id="EOM_65" enumValueId="2" enumValueCode="TIMESTEMP" enumValueName="时间"></enumValue>
+        <enumValue id="EOM_66" enumValueId="2" enumValueCode="BOOL" enumValueName="布尔"></enumValue>                
+    </enumItem>
+    <enumItem id="FORM_IMPORTANCE" enumItemId="7" enumItemCode="FORM_IMPORTANCE" enumIteName="重要程度">
+        <enumValue id="E24_71" enumValueId="1" enumValueCode="VERY_IMPORTANT" enumValueName="特别重要"></enumValue>
+        <enumValue id="E24_72" enumValueId="2" enumValueCode="IMPORTANT" enumValueName="重要"></enumValue>
+        <enumValue id="E24_73" enumValueId="3" enumValueCode="ORDINARY" enumValueName="一般"></enumValue>
+    </enumItem>
+    <enumItem id="CYCLE_TYPE" enumItemId="8" enumItemCode="CYCLE_TYPE" enumIteName="周期">
+    	<enumValue id="EOM_74" enumValueId="1" enumValueCode="1" enumValueName="日"></enumValue>
+        <enumValue id="EOM_75" enumValueId="2" enumValueCode="2" enumValueName="周"></enumValue>
+        <enumValue id="EOM_76" enumValueId="3" enumValueCode="3" enumValueName="月"></enumValue>
+        <enumValue id="EOM_77" enumValueId="4" enumValueCode="4" enumValueName="季度"></enumValue>
+        <enumValue id="EOM_78" enumValueId="5" enumValueCode="5" enumValueName="年"></enumValue>
+        <enumValue id="EOM_79" enumValueId="6" enumValueCode="6" enumValueName="按需"></enumValue>
+    </enumItem>
+    <enumItem id="DIS_ASSIGN_TYPE" enumItemId="9" enumItemCode="DIS_ASSIGN_TYPE" enumIteName="调度选派类型">
+    	<enumValue id="EOM_79" enumValueId="1" enumValueCode="SCHEDULING" enumValueName="调度"></enumValue>
+        <enumValue id="EOM_80" enumValueId="2" enumValueCode="EXECUTE" enumValueName="执行"></enumValue>
+        <enumValue id="EOM_81" enumValueId="3" enumValueCode="MAIN_TRANSFER" enumValueName="主送"></enumValue>
+        <enumValue id="EOM_82" enumValueId="4" enumValueCode="ASSIST_TRANSFER" enumValueName="辅送"></enumValue>
+        <enumValue id="EOM_83" enumValueId="5" enumValueCode="COPY" enumValueName="抄送"></enumValue>
+        <enumValue id="EOM_84" enumValueId="6" enumValueCode="COORDINATE" enumValueName="配合"></enumValue>
+    </enumItem>
+    <enumItem id="DIS_ASSIGN_TYPE" enumItemId="10" enumItemCode="DIS_ASSIGN_TYPE" enumIteName="调度选派对象类型">
+    	<enumValue id="EOM_85" enumValueId="1" enumValueCode="ORG" enumValueName="组织"></enumValue>
+        <enumValue id="EOM_86" enumValueId="2" enumValueCode="ROLE" enumValueName="角色"></enumValue>
+        <enumValue id="EOM_87" enumValueId="3" enumValueCode="MEMBER" enumValueName="人员"></enumValue>
+    </enumItem>                  
+    
+    <!-- 公示枚举类型E24(100) -->
+	<enumItem id="PM_PROCESSING_TYPE" enumItemId="100" enumItemCode="PM_PROCESSING_TYPE" enumIteName="处理类型">
+		<enumValue id="E24_1" enumValueId="1" enumValueCode="DRAFT_MAKE" enumValueName="草稿制定"></enumValue>
+		<enumValue id="E24_2" enumValueId="2" enumValueCode="DISPATCH" enumValueName="派发"></enumValue>
+		<enumValue id="E24_3" enumValueId="3" enumValueCode="DRAFT_MAKE_DIS" enumValueName="草稿制定并派发"></enumValue>
+		<enumValue id="E24_4" enumValueId="4" enumValueCode="RECEIPT" enumValueName="回单处理"></enumValue>
+		<enumValue id="E24_5" enumValueId="5" enumValueCode="MODIFY" enumValueName="修改"></enumValue>
+		<enumValue id="E24_6" enumValueId="6" enumValueCode="SIGN" enumValueName="签单"></enumValue>
+		<enumValue id="E24_7" enumValueId="7" enumValueCode="ADD_DIS" enumValueName="增派"></enumValue>
+		<enumValue id="E24_8" enumValueId="8" enumValueCode="TURN_DIS" enumValueName="转派"></enumValue>
+		<enumValue id="E24_9" enumValueId="9" enumValueCode="URGE" enumValueName="催单"></enumValue>
+		<enumValue id="E24_10" enumValueId="10" enumValueCode="CANCEL" enumValueName="撤单"></enumValue>
+		<enumValue id="E24_11" enumValueId="11" enumValueCode="CHECK" enumValueName="审核"></enumValue>
+		<enumValue id="E24_12" enumValueId="12" enumValueCode="PUBLISH" enumValueName="发布"></enumValue>
+		<enumValue id="E24_13" enumValueId="13" enumValueCode="LOSE" enumValueName="失效"></enumValue>
+		<enumValue id="E24_14" enumValueId="14" enumValueCode="TURN_NOTICE" enumValueName="转发"></enumValue>
+		<enumValue id="E24_15" enumValueId="15" enumValueCode="HANG_UP" enumValueName="挂起"></enumValue>
+		<enumValue id="E24_16" enumValueId="16" enumValueCode="HANG_SOLUTION" enumValueName="解挂"></enumValue>  
+	</enumItem>
+    <enumItem id="PM_ATTACHMENT_TYPE" enumItemId="101" enumItemCode="PM_ATTACHMENT_TYPE" enumIteName="附件类型">
+        <enumValue id="E24_20" enumValueId="1" enumValueCode="PM_APPLY" enumValueName="公示申请附件"></enumValue>
+    </enumItem>	
+    <enumItem id="ANNOUNCE_STATUS" enumItemId="102" enumItemCode="ANNOUNCE_STATUS" enumIteName="公示状态">
+        <enumValue id="E24_31" enumValueId="1" enumValueCode="REVOKED" enumValueName="已撤销"></enumValue>
+        <enumValue id="E24_32" enumValueId="2" enumValueCode="FAILED" enumValueName="已失效"></enumValue>
+        <enumValue id="E24_33" enumValueId="3" enumValueCode="TO_AUDIT" enumValueName="待审核"></enumValue>
+        <enumValue id="E24_34" enumValueId="4" enumValueCode="RELEASE" enumValueName="已发布"></enumValue>
+        <enumValue id="E24_35" enumValueId="5" enumValueCode="DRAFT" enumValueName="草稿"></enumValue>
+        <enumValue id="E24_36" enumValueId="6" enumValueCode="AUDIT_OPPOSE" enumValueName="审核不通过"></enumValue>
+        <enumValue id="E24_37" enumValueId="7" enumValueCode="TO_PUBLISH" enumValueName="待发布"></enumValue>
+    </enumItem>
+    <enumItem id="ANNOUNCE_TYPE" enumItemId="103" enumItemCode="ANNOUNCE_TYPE" enumIteName="公示类型">
+        <enumValue id="E24_41" enumValueId="1" enumValueCode="IMPORTANT_FAULT" enumValueName="重大故障报告公示"></enumValue>
+        <enumValue id="E24_42" enumValueId="2" enumValueCode="VERSION_UPGRADE" enumValueName="版本升级情况公示"></enumValue>
+        <enumValue id="E24_43" enumValueId="3" enumValueCode="STANDARD" enumValueName="规范公示"></enumValue>
+        <enumValue id="E24_44" enumValueId="4" enumValueCode="OFFICE" enumValueName="公文公示"></enumValue>
+        <enumValue id="E24_45" enumValueId="5" enumValueCode="NOTICE" enumValueName="提示信息公示"></enumValue>
+        <enumValue id="E24_46" enumValueId="6" enumValueCode="OTHER" enumValueName="其他公示"></enumValue>
+    </enumItem> 
+    
+    <!-- 测试卡枚举类型E19(200) -->
+    <enumItem id="TCM_PROCESSING_TYPE" enumItemId="200" enumItemCode="TCM_PROCESSING_TYPE" enumIteName="处理类型">
+        <enumValue id="E19_1" enumValueId="1" enumValueCode="DRAFT_MAKE" enumValueName="草稿制定"></enumValue>
+        <enumValue id="E19_2" enumValueId="2" enumValueCode="DISPATCH" enumValueName="派发"></enumValue>
+        <enumValue id="E19_3" enumValueId="3" enumValueCode="DRAFT_MAKE_DIS" enumValueName="草稿制定并派发"></enumValue>
+        <enumValue id="E19_4" enumValueId="4" enumValueCode="RECEIPT" enumValueName="回单处理"></enumValue>
+        <enumValue id="E19_5" enumValueId="5" enumValueCode="MODIFY" enumValueName="修改"></enumValue>
+        <enumValue id="E19_6" enumValueId="6" enumValueCode="SIGN" enumValueName="签单"></enumValue>
+        <enumValue id="E19_7" enumValueId="7" enumValueCode="ADD_DIS" enumValueName="增派"></enumValue>
+        <enumValue id="E19_8" enumValueId="8" enumValueCode="TURN_DIS" enumValueName="转派"></enumValue>
+        <enumValue id="E19_9" enumValueId="9" enumValueCode="URGE" enumValueName="催单"></enumValue>
+        <enumValue id="E19_10" enumValueId="10" enumValueCode="CANCEL" enumValueName="撤单"></enumValue>
+        <enumValue id="E19_11" enumValueId="11" enumValueCode="CHECK" enumValueName="审核"></enumValue>
+        <enumValue id="E19_12" enumValueId="12" enumValueCode="EXECUTE" enumValueName="执行"></enumValue>
+        <enumValue id="E19_13" enumValueId="13" enumValueCode="RECEIVE" enumValueName="接收"></enumValue>
+        <enumValue id="E19_14" enumValueId="14" enumValueCode="HANG_UP" enumValueName="挂起"></enumValue>
+        <enumValue id="E19_15" enumValueId="15" enumValueCode="HANG_SOLUTION" enumValueName="解挂"></enumValue>  
+    </enumItem>
+    <enumItem id="TCM_ATTACHMENT_TYPE" enumItemId="201" enumItemCode="TCM_ATTACHMENT_TYPE" enumIteName="附件类型">
+        <enumValue id="E19_21" enumValueId="1" enumValueCode="TCM_APPLY" enumValueName="公示申请附件"></enumValue>
+    </enumItem>  
+    <enumItem id="CHECK_FORM_STATUS" enumItemId="202" enumItemCode="CHECK_FORM_STATUS" enumIteName="清查单状态">
+        <enumValue id="E19_31" enumValueId="1" enumValueCode="DRAFT" enumValueName="草稿"></enumValue>
+        <enumValue id="E19_32" enumValueId="2" enumValueCode="SUBMITTED" enumValueName="未审批"></enumValue>
+        <enumValue id="E19_33" enumValueId="3" enumValueCode="FINISHED" enumValueName="完成"></enumValue>
+        <enumValue id="E19_34" enumValueId="4" enumValueCode="AUDIT_NO_GO" enumValueName="审批不通过"></enumValue>
+    </enumItem>  
+    <enumItem id="TESTCARD_STATUS" enumItemId="203" enumItemCode="TESTCARD_STATUS" enumIteName="测试卡状态">
+        <enumValue id="E19_41" enumValueId="1" enumValueCode="NORMAL" enumValueName="正常"></enumValue>
+        <enumValue id="E19_42" enumValueId="2" enumValueCode="FAULT" enumValueName="故障"></enumValue>
+        <enumValue id="E19_43" enumValueId="3" enumValueCode="RETIREMENT" enumValueName="报废"></enumValue>
+        <enumValue id="E19_44" enumValueId="4" enumValueCode="FIXING" enumValueName="送修"></enumValue>
+    </enumItem>     
+    <enumItem id="FIXED_PHONE_TYPE" enumItemId="204" enumItemCode="FIXED_PHONE_TYPE" enumIteName="固定电话类型">
+        <enumValue id="E19_51" enumValueId="1" enumValueCode="DIRECT_LINE" enumValueName="直线电话"></enumValue>
+        <enumValue id="E19_52" enumValueId="2" enumValueCode="FAX" enumValueName="传真"></enumValue>
+        <enumValue id="E19_53" enumValueId="3" enumValueCode="MODEM" enumValueName="Modem"></enumValue>
+    </enumItem>      
+    <enumItem id="OPERATOR" enumItemId="205" enumItemCode="OPERATOR" enumIteName="号码所属运营商">
+        <enumValue id="E19_61" enumValueId="1" enumValueCode="CHINAUNICOM" enumValueName="联通"></enumValue>
+        <enumValue id="E19_62" enumValueId="2" enumValueCode="CHINAMOBILE" enumValueName="移动"></enumValue>
+        <enumValue id="E19_63" enumValueId="3" enumValueCode="CHINATELECOM" enumValueName="电信"></enumValue>
+        <enumValue id="E19_64" enumValueId="4" enumValueCode="RAILCOM" enumValueName="铁通"></enumValue>
+        <enumValue id="E19_65" enumValueId="5" enumValueCode="AT&amp;T" enumValueName="AT&amp;T"></enumValue>        
+    </enumItem> 
+    <enumItem id="CARD_NETWORK_TYPE" enumItemId="206" enumItemCode="CARD_NETWORK_TYPE" enumIteName="网络类型">
+        <enumValue id="E19_71" enumValueId="1" enumValueCode="GSM" enumValueName="GSM"></enumValue>
+        <enumValue id="E19_72" enumValueId="2" enumValueCode="WCDMA" enumValueName="WCDMA"></enumValue>
+        <enumValue id="E19_73" enumValueId="3" enumValueCode="HSPA" enumValueName="HSPA"></enumValue>
+        <enumValue id="E19_74" enumValueId="4" enumValueCode="IP" enumValueName="IP"></enumValue>
+        <enumValue id="E19_75" enumValueId="5" enumValueCode="OTHERS" enumValueName="其他"></enumValue>        
+    </enumItem> 
+    <enumItem id="TESTCARD_TYPE" enumItemId="207" enumItemCode="TESTCARD_TYPE" enumIteName="测试卡类别">
+        <enumValue id="E19_81" enumValueId="1" enumValueCode="INTERNATIONAL_IN" enumValueName="国际漫入"></enumValue>
+        <enumValue id="E19_82" enumValueId="2" enumValueCode="INTERNATIONAL_OUT" enumValueName="国际漫出"></enumValue>
+        <enumValue id="E19_83" enumValueId="3" enumValueCode="DOMESTIC_IN" enumValueName="国内漫入"></enumValue>
+        <enumValue id="E19_84" enumValueId="4" enumValueCode="DOMESTIC_OUT" enumValueName="国内漫出"></enumValue>
+        <enumValue id="E19_85" enumValueId="5" enumValueCode="LOCAL_IN" enumValueName="本地漫入"></enumValue>   
+        <enumValue id="E19_86" enumValueId="6" enumValueCode="LOCAL_OUT" enumValueName="本地漫出"></enumValue>        
+        <enumValue id="E19_87" enumValueId="7" enumValueCode="LOCAL_TEST" enumValueName="本地测试"></enumValue>             
+    </enumItem>
+    <enumItem id="PACKAGE_TYPE" enumItemId="208" enumItemCode="PACKAGE_TYPE" enumIteName="套餐类型">            
+    </enumItem>
+    <enumItem id="ATTCH_PACKAGE" enumItemId="209" enumItemCode="ATTCH_PACKAGE" enumIteName="附属套餐">            
+    </enumItem>                             
+    <enumItem id="CARD_OPERATION_TYPE" enumItemId="210" enumItemCode="CARD_OPERATION_TYPE" enumIteName="测试卡操作类型">
+        <enumValue id="E19_111" enumValueId="1" enumValueCode="TRANSFER" enumValueName="调拨"></enumValue>
+        <enumValue id="E19_112" enumValueId="2" enumValueCode="TURN_OVER" enumValueName="移交"></enumValue>
+        <enumValue id="E19_113" enumValueId="3" enumValueCode="BORROW" enumValueName="借用"></enumValue>
+        <enumValue id="E19_114" enumValueId="4" enumValueCode="RETURN" enumValueName="归还"></enumValue>
+        <enumValue id="E19_115" enumValueId="5" enumValueCode="WASTED" enumValueName="报废"></enumValue>              
+    </enumItem>
+
+    <enumItem id="DIFFERENCE_SORT" enumItemId="212" enumItemCode="DIFFERENCE_SORT" enumIteName="差异分类">
+        <enumValue id="E19_131" enumValueId="1" enumValueCode="AVAILABLE" enumValueName="可用数量差异"></enumValue>
+        <enumValue id="E19_132" enumValueId="2" enumValueCode="NOT_AVAILABLE" enumValueName="不可用数量差异"></enumValue>
+        <enumValue id="E19_133" enumValueId="3" enumValueCode="LENT_DIFFERENCE" enumValueName="和借出数量差异"></enumValue>            
+    </enumItem> 
+    <enumItem id="DIFFERENCE_TYPE" enumItemId="213" enumItemCode="DIFFERENCE_TYPE" enumIteName="差异类型">
+        <enumValue id="E19_141" enumValueId="1" enumValueCode="OWNERSHIP_CHANGE" enumValueName="所属权变更"></enumValue>
+        <enumValue id="E19_142" enumValueId="2" enumValueCode="STATUS_CHANGE" enumValueName="状态变更"></enumValue>
+        <enumValue id="E19_143" enumValueId="3" enumValueCode="LOAN_UNREGISTERED" enumValueName="借出未登记"></enumValue>  
+        <enumValue id="E19_144" enumValueId="4" enumValueCode="RETURN_UNREGISTERED" enumValueName="归还未登记"></enumValue>            
+    </enumItem>
+    <enumItem id="RECH_CARD_TYPE" enumItemId="214" enumItemCode="RECH_CARD_TYPE" enumIteName="充值卡卡类型">
+        <enumValue id="E19_151" enumValueId="1" enumValueCode="RECHARGED" enumValueName="已充"></enumValue>
+        <enumValue id="E19_152" enumValueId="2" enumValueCode="NOT_RECHARGED" enumValueName="未充"></enumValue>         
+    </enumItem> 
+    <enumItem id="MOBLIE_TYPE" enumItemId="215" enumItemCode="MOBLIE_TYPE" enumIteName="手机类型">            
+    </enumItem> 
+    <enumItem id="ATTRIBUTION_COUNTRY" enumItemId="216" enumItemCode="ATTRIBUTION_COUNTRY" enumIteName="归属国家">   
+        <enumValue id="E19_171" enumValueId="1" enumValueCode="CN" enumValueName="中国"></enumValue>         
+    </enumItem>                         
+        
+    <!-- 代维枚举类型E04(300) -->
+    <enumItem id="CHECK_STATUS" enumItemId="300" enumItemCode="CHECK_STATUS" enumIteName="审核状态">
+        <enumValue id="E04_1" enumValueId="1" enumValueCode="SUBMITTED" enumValueName="未审核"></enumValue>
+        <enumValue id="E04_2" enumValueId="2" enumValueCode="SUBMITTING" enumValueName="审核中"></enumValue>
+        <enumValue id="E04_3" enumValueId="3" enumValueCode="APPROVED" enumValueName="审核通过"></enumValue>
+        <enumValue id="E04_4" enumValueId="4" enumValueCode="REJECTED" enumValueName="审核不通过"></enumValue>
+    </enumItem>
+    <enumItem id="EXAM_CLASS" enumItemId="301" enumItemCode="EXAM_CLASS" enumIteName="考试类别">
+        <enumValue id="E04_11" enumValueId="1" enumValueCode="BASIC_KNOWLEDGE" enumValueName="通信基础知识考试"></enumValue>
+        <enumValue id="E04_12" enumValueId="2" enumValueCode="FAULT_FIX_ABILITY" enumValueName="故障修障能力考试"></enumValue>
+        <enumValue id="E04_13" enumValueId="3" enumValueCode="BACKUP_MANAGEMENT" enumValueName="备件备品管理考试"></enumValue>
+    </enumItem>
+    <enumItem id="OWNERSHIP" enumItemId="302" enumItemCode="OWNERSHIP" enumIteName="所有性质">
+        <enumValue id="E04_21" enumValueId="1" enumValueCode="OWN" enumValueName="自用"></enumValue>
+        <enumValue id="E04_22" enumValueId="2" enumValueCode="RENT" enumValueName="租用"></enumValue>
+    </enumItem>
+    <enumItem id="TARGET_TYPE" enumItemId="303" enumItemCode="TARGET_TYPE" enumIteName="目标类型">
+        <enumValue id="E04_31" enumValueId="1" enumValueCode="PERSONNEL" enumValueName="人员"></enumValue>
+        <enumValue id="E04_32" enumValueId="2" enumValueCode="SERVICE_COMPANY" enumValueName="代维公司"></enumValue>
+    </enumItem>
+    <enumItem id="RISK_TYPE" enumItemId="304" enumItemCode="CHECK_STATUS" enumIteName="隐患类型">
+        <enumValue id="E04_41" enumValueId="1" enumValueCode="POWER_SUPPLY" enumValueName="供电"></enumValue>
+        <enumValue id="E04_42" enumValueId="2" enumValueCode="FIRE_FIGHTING" enumValueName="消防"></enumValue>
+        <enumValue id="E04_43" enumValueId="3" enumValueCode="WATER_PROOF" enumValueName="防水"></enumValue>
+        <enumValue id="E04_44" enumValueId="4" enumValueCode="ELECTRICAL_SHOCK" enumValueName="电气触电"></enumValue>
+    </enumItem>
+    <enumItem id="MEETING_TYPE" enumItemId="305" enumItemCode="MEETING_TYPE" enumIteName="会议类型">
+        <enumValue id="E04_51" enumValueId="1" enumValueCode="END_DEVICE_CHECK" enumValueName="终端设备检查会议"></enumValue>
+        <enumValue id="E04_52" enumValueId="2" enumValueCode="FAULT_RECOVER" enumValueName="障碍故障恢复通告会议"></enumValue>
+    </enumItem>
+    <enumItem id="PPT_TYPE" enumItemId="306" enumItemCode="PPT_TYPE" enumIteName="课件类别">
+        <enumValue id="E04_61" enumValueId="1" enumValueCode="BASE_STATION" enumValueName="基站"></enumValue>
+        <enumValue id="E04_62" enumValueId="2" enumValueCode="LINE" enumValueName="线路"></enumValue>
+        <enumValue id="E04_63" enumValueId="3" enumValueCode="FIXED_NETWORK" enumValueName="固网"></enumValue>
+    </enumItem>
+    <enumItem id="TRAINING_TYPE" enumItemId="307" enumItemCode="TRAINING_TYPE" enumIteName="培训类型">
+        <enumValue id="E04_71" enumValueId="1" enumValueCode="TECHNOLOGICAL" enumValueName="技能培训"></enumValue>
+        <enumValue id="E04_72" enumValueId="2" enumValueCode="GENERAL_RULE" enumValueName="规章制度"></enumValue>
+    </enumItem>
+    <enumItem id="INSTRUMENT_STATUS" enumItemId="308" enumItemCode="INSTRUMENT_STATUS" enumIteName="仪表仪器状态">
+        <enumValue id="E04_81" enumValueId="1" enumValueCode="USING" enumValueName="在用"></enumValue>
+        <enumValue id="E04_82" enumValueId="2" enumValueCode="FIXING" enumValueName="送修"></enumValue>
+        <enumValue id="E04_83" enumValueId="3" enumValueCode="RETIREMENT" enumValueName="报废"></enumValue>
+    </enumItem>
+    <enumItem id="CYCLE_TYPE" enumItemId="309" enumItemCode="CYCLE_TYPE" enumIteName="周期">
+        <enumValue id="E04_91" enumValueId="1" enumValueCode="1" enumValueName="天"></enumValue>
+        <enumValue id="E04_92" enumValueId="2" enumValueCode="2" enumValueName="周"></enumValue>
+        <enumValue id="E04_93" enumValueId="3" enumValueCode="3" enumValueName="月"></enumValue>
+        <enumValue id="E04_94" enumValueId="4" enumValueCode="4" enumValueName="季度"></enumValue>
+        <enumValue id="E04_95" enumValueId="5" enumValueCode="5" enumValueName="年"></enumValue>
+        <enumValue id="E04_96" enumValueId="6" enumValueCode="6" enumValueName="按需"></enumValue>
+    </enumItem>
+    <enumItem id="QUESTION_TYPE" enumItemId="311" enumItemCode="QUESTION_TYPE" enumIteName="试题类型">
+        <enumValue id="E04_111" enumValueId="1" enumValueCode="SINGLE_CHOICE" enumValueName="单选"></enumValue>
+        <enumValue id="E04_112" enumValueId="2" enumValueCode="MULTIPLE_CHOICE" enumValueName="多选"></enumValue>
+        <enumValue id="E04_113" enumValueId="3" enumValueCode="BLANK_FILLING" enumValueName="填空"></enumValue>
+        <enumValue id="E04_114" enumValueId="4" enumValueCode="TRUE_OR_FALSE" enumValueName="判断"></enumValue>
+        <enumValue id="E04_115" enumValueId="5" enumValueCode="QA" enumValueName="问答"></enumValue>
+    </enumItem>
+    <enumItem id="POSITION_TYPE" enumItemId="312" enumItemCode="POSITION_TYPE" enumIteName="岗位角色类型">
+        <enumValue id="E04_121" enumValueId="1" enumValueCode="STAFF" enumValueName="普通人员"></enumValue>
+        <enumValue id="E04_122" enumValueId="2" enumValueCode="ADMINISTRATOR" enumValueName="管理员"></enumValue>
+    </enumItem>
+    <enumItem id="DISPATCH_ORDER_TYPE" enumItemId="313" enumItemCode="DISPATCH_ORDER_TYPE" enumIteName="调度单类型">
+        <enumValue id="E04_131" enumValueId="1" enumValueCode="PERSONAL_CERT" enumValueName="人员资质调度单"></enumValue>
+        <enumValue id="E04_132" enumValueId="2" enumValueCode="GENERATE_POWER" enumValueName="发电调度单"></enumValue>
+        <enumValue id="E04_133" enumValueId="3" enumValueCode="PERSONNAL_INFO" enumValueName="人员信息调度单"></enumValue>
+        <enumValue id="E04_134" enumValueId="4" enumValueCode="POINT" enumValueName="驻点调度单"></enumValue>
+    </enumItem>
+    <enumItem id="BAR_CODE" enumItemId="314" enumItemCode="BAR_CODE" enumIteName="试题类型">
+        <enumValue id="E04_141" enumValueId="1" enumValueCode="ean-8" enumValueName="ean-8"></enumValue>
+        <enumValue id="E04_142" enumValueId="2" enumValueCode="ean-13" enumValueName="ean-13"></enumValue>
+        <enumValue id="E04_143" enumValueId="3" enumValueCode="upc-a" enumValueName="upc-a"></enumValue>
+        <enumValue id="E04_144" enumValueId="4" enumValueCode="upc-e" enumValueName="upc-e"></enumValue>
+        <enumValue id="E04_145" enumValueId="5" enumValueCode="code39" enumValueName="code39"></enumValue>
+        <enumValue id="E04_146" enumValueId="6" enumValueCode="code128" enumValueName="code128"></enumValue>
+    </enumItem>
+    <enumItem id="THICKNESS" enumItemId="315" enumItemCode="THICKNESS" enumIteName="条形码厚度">
+        <enumValue id="E04_151" enumValueId="1" enumValueCode="TWO" enumValueName="2"></enumValue>
+        <enumValue id="E04_152" enumValueId="2" enumValueCode="FIVE" enumValueName="5"></enumValue>
+        <enumValue id="E04_153" enumValueId="3" enumValueCode="TEN" enumValueName="10"></enumValue>
+        <enumValue id="E04_154" enumValueId="4" enumValueCode="FIFTEEN" enumValueName="15"></enumValue>
+    </enumItem>
+    <enumItem id="RESOLUTION" enumItemId="316" enumItemCode="RESOLUTION" enumIteName="条形码分辨率">
+        <enumValue id="E04_161" enumValueId="1" enumValueCode="TEN" enumValueName="10"></enumValue>
+        <enumValue id="E04_162" enumValueId="2" enumValueCode="TWENTY" enumValueName="20"></enumValue>
+        <enumValue id="E04_163" enumValueId="3" enumValueCode="TWENTY" enumValueName="30"></enumValue>
+        <enumValue id="E04_164" enumValueId="4" enumValueCode="FORTY" enumValueName="40"></enumValue>
+    </enumItem>
+    <enumItem id="GENDER" enumItemId="317" enumItemCode="GENDER" enumIteName="性别">
+        <enumValue id="E04_171" enumValueId="1" enumValueCode="M" enumValueName="男"></enumValue>
+        <enumValue id="E04_172" enumValueId="2" enumValueCode="F" enumValueName="女"></enumValue>
+        <enumValue id="E04_173" enumValueId="3" enumValueCode="U" enumValueName="未知"></enumValue>
+    </enumItem>
+    <enumItem id="POINT_APPLICATION_STATUS" enumItemId="318" enumItemCode="POINT_APPLICATION_STATUS" enumIteName="驻点申请状态">
+        <enumValue id="E04_181" enumValueId="1" enumValueCode="IN_THE_PROCESS" enumValueName="申请中"></enumValue>
+        <enumValue id="E04_182" enumValueId="2" enumValueCode="SUCCESS" enumValueName="申请通过"></enumValue>
+        <enumValue id="E04_183" enumValueId="3" enumValueCode="FAIL" enumValueName="申请不通过"></enumValue>
+    </enumItem>
+    <enumItem id="CHECK_PLAN_TYPE" enumItemId="319" enumItemCode="CHECK_PLAN_TYPE" enumIteName="检查计划类型">
+        <enumValue id="E04_191" enumValueId="1" enumValueCode="MACHINE_ROOM_CHECK" enumValueName="机房巡检"></enumValue>
+        <enumValue id="E04_192" enumValueId="2" enumValueCode="DEVICE_CHECK" enumValueName="设备巡检"></enumValue>
+        <enumValue id="E04_193" enumValueId="3" enumValueCode="DEVICE_PERFORM_CHECK" enumValueName="设备性能检查"></enumValue>
+    </enumItem>
+    <enumItem id="KPI_TEMPLATE_TYPE" enumItemId="320" enumItemCode="KPI_TEMPLATE_TYPE" enumIteName="考核模板类型">
+        <enumValue id="E04_201" enumValueId="1" enumValueCode="TEST_TEMPLATE" enumValueName="考核模板"></enumValue>
+        <enumValue id="E04_202" enumValueId="2" enumValueCode="GENERAL_TEMPLATE" enumValueName="通用模板"></enumValue>
+    </enumItem>
+    <enumItem id="GENERATE_WAY" enumItemId="321" enumItemCode="GENERATE_WAY" enumIteName="生成方式">
+        <enumValue id="E04_211" enumValueId="1" enumValueCode="RANDOM" enumValueName="随机"></enumValue>
+        <enumValue id="E04_212" enumValueId="2" enumValueCode="UNITARY" enumValueName="统一"></enumValue>
+    </enumItem>
+    <enumItem id="DIFFICULTY" enumItemId="322" enumItemCode="DIFFICULTY" enumIteName="难易度">
+        <enumValue id="E04_221" enumValueId="1" enumValueCode="HIGH" enumValueName="高"></enumValue>
+        <enumValue id="E04_222" enumValueId="2" enumValueCode="MIDIEM" enumValueName="中"></enumValue>
+        <enumValue id="E04_223" enumValueId="3" enumValueCode="LOW" enumValueName="低"></enumValue>
+    </enumItem>
+    <enumItem id="LECTURER_ASSESSMENT" enumItemId="323" enumItemCode="LECTURER_ASSESSMENT" enumIteName="讲师评分">
+        <enumValue id="E04_231" enumValueId="1" enumValueCode="A" enumValueName="A"></enumValue>
+        <enumValue id="E04_232" enumValueId="2" enumValueCode="B" enumValueName="B"></enumValue>
+        <enumValue id="E04_233" enumValueId="3" enumValueCode="C" enumValueName="C"></enumValue>
+        <enumValue id="E04_234" enumValueId="4" enumValueCode="D" enumValueName="D"></enumValue>
+        <enumValue id="E04_235" enumValueId="5" enumValueCode="E" enumValueName="E"></enumValue>
+    </enumItem>
+
+    <enumItem id="AGENCY_OPT_TYPE" enumItemId="325" enumItemCode="AGENCY_OPT_TYPE" enumIteName="代维操作类型">
+        <enumValue id="E04_251" enumValueId="1" enumValueCode="CREATE" enumValueName="新增"></enumValue>
+        <enumValue id="E04_252" enumValueId="2" enumValueCode="DELETE" enumValueName="删除"></enumValue>
+        <enumValue id="E04_253" enumValueId="3" enumValueCode="UPDATE" enumValueName="修改"></enumValue>
+    </enumItem>
+    <enumItem id="AGENCY_OPT_STATUS" enumItemId="326" enumItemCode="AGENCY_OPT_STATUS" enumIteName="代维操作状态">
+        <enumValue id="E04_261" enumValueId="1" enumValueCode="TAKE_EFFECT" enumValueName="生效"></enumValue>
+        <enumValue id="E04_262" enumValueId="2" enumValueCode="AUDIT" enumValueName="待审核"></enumValue>
+        <enumValue id="E04_263" enumValueId="3" enumValueCode="FAILED" enumValueName="已失效"></enumValue>
+    </enumItem>
+    <!-- 客户网络服务枚举类型E22(400) -->
+    <enumItem id="CNS_PROCESSING_TYPE" enumItemId="400" enumItemCode="CNS_PROCESSING_TYPE" enumIteName="处理类型">
+        <enumValue id="E22_1" enumValueId="1" enumValueCode="DRAFT_MAKE" enumValueName="草稿制定"></enumValue>
+        <enumValue id="E22_2" enumValueId="2" enumValueCode="DISPATCH" enumValueName="派发"></enumValue>
+        <enumValue id="E22_3" enumValueId="3" enumValueCode="DRAFT_MAKE_DIS" enumValueName="草稿制定并派发"></enumValue>
+        <enumValue id="E22_4" enumValueId="4" enumValueCode="RECEIPT" enumValueName="回单处理"></enumValue>
+        <enumValue id="E22_5" enumValueId="5" enumValueCode="MODIFY" enumValueName="修改"></enumValue>
+        <enumValue id="E22_6" enumValueId="6" enumValueCode="SIGN" enumValueName="签单"></enumValue>
+        <enumValue id="E22_7" enumValueId="7" enumValueCode="ADD_DIS" enumValueName="增派"></enumValue>
+        <enumValue id="E22_8" enumValueId="8" enumValueCode="TURN_DIS" enumValueName="转派"></enumValue>
+        <enumValue id="E22_9" enumValueId="9" enumValueCode="URGE" enumValueName="催单"></enumValue>
+        <enumValue id="E22_10" enumValueId="10" enumValueCode="CANCEL" enumValueName="撤单"></enumValue>
+        <enumValue id="E22_11" enumValueId="11" enumValueCode="CHECK" enumValueName="审核"></enumValue>
+        <enumValue id="E22_12" enumValueId="12" enumValueCode="APPROVE" enumValueName="审批"></enumValue>
+        <enumValue id="E22_13" enumValueId="13" enumValueCode="EXECUTE" enumValueName="执行反馈"></enumValue>
+        <enumValue id="E22_14" enumValueId="14" enumValueCode="SUMMARY" enumValueName="汇总"></enumValue>
+        <enumValue id="E22_15" enumValueId="15" enumValueCode="NOTICE" enumValueName="通知"></enumValue> 
+        <enumValue id="E22_16" enumValueId="16" enumValueCode="HANG_UP" enumValueName="挂起"></enumValue>  
+        <enumValue id="E22_17" enumValueId="17" enumValueCode="HANG_SOLUTION" enumValueName="解挂"></enumValue> 
+    </enumItem>
+    <enumItem id="CNS_ATTACHMENT_TYPE" enumItemId="401" enumItemCode="CNS_ATTACHMENT_TYPE" enumIteName="附件类型">
+        <enumValue id="E22_21" enumValueId="1" enumValueCode="PM_MANAGER_APPLY" enumValueName="服务经理设置申请单附件"></enumValue>
+        <enumValue id="E22_22" enumValueId="2" enumValueCode="PM_APP_APPLY" enumValueName="网络服务任务实施申请单附件"></enumValue>
+        <enumValue id="E22_23" enumValueId="3" enumValueCode="PM_APP_SUMMARY" enumValueName="网络服务任务实施总结报告附件"></enumValue>
+        <enumValue id="E22_24" enumValueId="4" enumValueCode="PM_APP_FEEDBACK" enumValueName="网络服务任务实施反馈附件"></enumValue>
+        <enumValue id="E22_25" enumValueId="5" enumValueCode="PM_MANAGER_FEEDBACK" enumValueName="服务经理设置反馈附件"></enumValue>
+        <enumValue id="E22_26" enumValueId="6" enumValueCode="PM_APP_SUMMARY" enumValueName="网络服务任务实施汇总附件"></enumValue>
+    </enumItem>  
+    <enumItem id="APPLICATION_TYPE" enumItemId="402" enumItemCode="APPLICATION_TYPE" enumIteName="申请类型">
+        <enumValue id="E22_31" enumValueId="1" enumValueCode="NEW" enumValueName="新配"></enumValue>
+        <enumValue id="E22_32" enumValueId="2" enumValueCode="CHANGE" enumValueName="变更"></enumValue>
+        <enumValue id="E22_33" enumValueId="3" enumValueCode="UNDO" enumValueName="撤销"></enumValue>
+    </enumItem>
+    <enumItem id="CIR_TYPE" enumItemId="403" enumItemCode="CIR_TYPE" enumIteName="电路类型">
+        <enumValue id="E22_41" enumValueId="1" enumValueCode="DIA_CIR" enumValueName="DIA电路"></enumValue>
+        <enumValue id="E22_42" enumValueId="2" enumValueCode="INT_MPLS_VPN_CIR" enumValueName="国际MPLS-VPN电路"></enumValue>
+        <enumValue id="E22_43" enumValueId="3" enumValueCode="DOM_MPLS_VPN_CIR" enumValueName="国内MPLS-VPN电路"></enumValue>
+        <enumValue id="E22_44" enumValueId="4" enumValueCode="INTERNET_THROUGH_CIR" enumValueName="互联网穿透电路"></enumValue>
+        <enumValue id="E22_45" enumValueId="5" enumValueCode="INT_ATM_CIR" enumValueName="国际ATM电路"></enumValue>
+        <enumValue id="E22_46" enumValueId="6" enumValueCode="INT_DDN_CIR" enumValueName="国际DDN电路"></enumValue>
+        <enumValue id="E22_47" enumValueId="7" enumValueCode="INT_FR_CIR" enumValueName="国际FR电路"></enumValue>
+        <enumValue id="E22_48" enumValueId="8" enumValueCode="INT_DIGITAL_CIR" enumValueName="国际数字专线电路"></enumValue>
+        <enumValue id="E22_49" enumValueId="9" enumValueCode="INT_ETHERNET_CIR" enumValueName="国际以太网专线电路"></enumValue>
+        <enumValue id="E22_50" enumValueId="10" enumValueCode="DOM_ATM_CIR" enumValueName="国内ATM电路"></enumValue>
+        <enumValue id="E22_51" enumValueId="11" enumValueCode="DOM_DDN_CIR" enumValueName="国内DDN电路"></enumValue>
+        <enumValue id="E22_52" enumValueId="12" enumValueCode="DOM_FR_CIR" enumValueName="国内FR电路"></enumValue>
+        <enumValue id="E22_53" enumValueId="13" enumValueCode="DIGITAL_INDIVIDUAL_CIR" enumValueName="数字专线电路"></enumValue>
+        <enumValue id="E22_54" enumValueId="14" enumValueCode="ETHERNET_INDIVIDUAL_CIR" enumValueName="以太网专线电路"></enumValue>
+        <enumValue id="E22_55" enumValueId="15" enumValueCode="REPEAT_CIR" enumValueName="中继电路"></enumValue>
+    </enumItem>  
+    <enumItem id="INTERFACE_TYPE" enumItemId="404" enumItemCode="INTERFACE_TYPE" enumIteName="端口类型">
+    </enumItem>
+    <enumItem id="CUS_SRV_WO_TYPE" enumItemId="405" enumItemCode="CUS_SRV_WO_TYPE" enumIteName="客户网络工单类型">
+        <enumValue id="E22_61" enumValueId="1" enumValueCode="SERVICE_MANAGER_SETUP" enumValueName="服务经理设置"></enumValue>
+        <enumValue id="E22_62" enumValueId="2" enumValueCode="TASK_OPERATION_SERVICE" enumValueName="服务任务实施"></enumValue>
+    </enumItem>  
+    
+    <!-- 应急演练枚举类型E23(500) -->
+    <enumItem id="EDM_PROCESSING_TYPE" enumItemId="500" enumItemCode="EDM_PROCESSING_TYPE" enumIteName="处理类型">
+        <enumValue id="E23_1" enumValueId="1" enumValueCode="DRAFT_MAKE" enumValueName="草稿制定"></enumValue>
+        <enumValue id="E23_2" enumValueId="2" enumValueCode="DISPATCH" enumValueName="派发"></enumValue>
+        <enumValue id="E23_3" enumValueId="3" enumValueCode="DRAFT_MAKE_DIS" enumValueName="草稿制定并派发"></enumValue>
+        <enumValue id="E23_4" enumValueId="4" enumValueCode="RECEIPT" enumValueName="回单处理"></enumValue>
+        <enumValue id="E23_5" enumValueId="5" enumValueCode="MODIFY" enumValueName="修改"></enumValue>
+        <enumValue id="E23_6" enumValueId="6" enumValueCode="URGE" enumValueName="催单"></enumValue>
+        <enumValue id="E23_7" enumValueId="7" enumValueCode="CANCEL" enumValueName="撤单"></enumValue>
+        <enumValue id="E23_8" enumValueId="8" enumValueCode="CHECK_DRILL" enumValueName="申请单审核"></enumValue>
+        <enumValue id="E23_9" enumValueId="9" enumValueCode="DO_PLAN" enumValueName="制作临时预案"></enumValue>
+        <enumValue id="E23_10" enumValueId="10" enumValueCode="CHECK_PLAN" enumValueName="审核"></enumValue>
+        <enumValue id="E23_11" enumValueId="11" enumValueCode="EXECUTE" enumValueName="执行反馈"></enumValue>
+        <enumValue id="E23_12" enumValueId="12" enumValueCode="APPROVE" enumValueName="反馈审核"></enumValue>
+        <enumValue id="E23_13" enumValueId="13" enumValueCode="PLAN_NO_PASS" enumValueName="预案制作不通过"></enumValue>
+        <enumValue id="E23_14" enumValueId="14" enumValueCode="PLAN_APPROVE" enumValueName="审批"></enumValue>
+        <enumValue id="E23_15" enumValueId="15" enumValueCode="HANG_UP" enumValueName="挂起"></enumValue>  
+        <enumValue id="E23_16" enumValueId="16" enumValueCode="HANG_SOLUTION" enumValueName="解挂"></enumValue> 
+        <enumValue id="E23_17" enumValueId="17" enumValueCode="ADD_DIS" enumValueName="增派"></enumValue> 
+        <enumValue id="E23_18" enumValueId="18" enumValueCode="TURN_DIS" enumValueName="转派"></enumValue> 
+    </enumItem>
+    <enumItem id="EDM_ATTACHMENT_TYPE" enumItemId="501" enumItemCode="EDM_ATTACHMENT_TYPE" enumIteName="附件类型">
+        <enumValue id="E23_21" enumValueId="1" enumValueCode="EDM_DRILL_INFO" enumValueName="应急演练申请信息附件"></enumValue>
+        <enumValue id="E23_22" enumValueId="2" enumValueCode="EDM_DRILL_MODIFY" enumValueName="演练申请单修改附件"></enumValue>
+        <enumValue id="E23_23" enumValueId="3" enumValueCode="EDM_TEMPORARY_PLAN" enumValueName="制作临时预案附件"></enumValue>
+        <enumValue id="E23_24" enumValueId="4" enumValueCode="EDM_PLAN_INFO" enumValueName="应急预案申请信息附件"></enumValue>
+        <enumValue id="E23_25" enumValueId="5" enumValueCode="EDM_PLAN_MODIFY" enumValueName="预案申请单修改附件"></enumValue>
+    </enumItem>
+    <enumItem id="WORK_ORDER_TYPE" enumItemId="503" enumItemCode="WORK_ORDER_TYPE" enumIteName="工单类型">
+        <enumValue id="E23_41" enumValueId="1" enumValueCode="BUSINESS_FAULT" enumValueName="业务故障"></enumValue>
+        <enumValue id="E23_42" enumValueId="2" enumValueCode="NETWORK_FAULT" enumValueName="网络故障"></enumValue>
+        <enumValue id="E23_43" enumValueId="3" enumValueCode="COMPLAINT_FORM" enumValueName="投诉单"></enumValue>
+        <enumValue id="E23_44" enumValueId="4" enumValueCode="CUTOVER_FORM" enumValueName="割接单"></enumValue>
+        <enumValue id="E23_45" enumValueId="5" enumValueCode="WORK_PLAN" enumValueName="作业计划"></enumValue>
+    </enumItem>               
+	
+	<!-- 资源数据管理枚举类型E09(600) -->
+    <enumItem id="RDM_PROCESSING_TYPE" enumItemId="600" enumItemCode="RDM_PROCESSING_TYPE" enumIteName="处理类型">
+        <enumValue id="E09_1" enumValueId="1" enumValueCode="DRAFT" enumValueName="拟稿"></enumValue>
+        <enumValue id="E09_2" enumValueId="2" enumValueCode="APPLY" enumValueName="申请单提交"></enumValue>
+        <enumValue id="E09_3" enumValueId="3" enumValueCode="APPLY_CHECK" enumValueName="申请单审核"></enumValue>
+        <enumValue id="E09_4" enumValueId="4" enumValueCode="PRO_CHECK" enumValueName="专业审核"></enumValue>
+        <enumValue id="E09_5" enumValueId="5" enumValueCode="DISPATCH_TASK" enumValueName="分发录入"></enumValue>
+        <enumValue id="E09_6" enumValueId="6" enumValueCode="RECORD" enumValueName="录入反馈"></enumValue>
+        <enumValue id="E09_7" enumValueId="7" enumValueCode="SUMMERY" enumValueName="录入汇总"></enumValue>
+        <enumValue id="E09_8" enumValueId="8" enumValueCode="RECORD_CHECK" enumValueName="录入结果审核"></enumValue>
+        <enumValue id="E09_9" enumValueId="9" enumValueCode="SUMMERY_CHECK" enumValueName="录入审核汇总"></enumValue>
+        <enumValue id="E09_10" enumValueId="10" enumValueCode="EXCUTE" enumValueName="执行并反馈"></enumValue>
+        <enumValue id="E09_11" enumValueId="11" enumValueCode="ARCHIVE" enumValueName="归档"></enumValue>
+        <enumValue id="E09_12" enumValueId="12" enumValueCode="ADD_DIS" enumValueName="增派"></enumValue>
+        <enumValue id="E09_13" enumValueId="13" enumValueCode="TURN_DIS" enumValueName="转派"></enumValue>
+        <enumValue id="E09_14" enumValueId="14" enumValueCode="URGE" enumValueName="催单"></enumValue>
+        <enumValue id="E09_15" enumValueId="15" enumValueCode="CANCEL" enumValueName="撤单"></enumValue>  
+        <enumValue id="E09_16" enumValueId="16" enumValueCode="HANG_UP" enumValueName="挂起"></enumValue> 
+        <enumValue id="E09_17" enumValueId="17" enumValueCode="HANG_SOLUTION" enumValueName="解挂"></enumValue> 
+    </enumItem>
+    <enumItem id="RDM_ATTACHMENT_TYPE" enumItemId="601" enumItemCode="RDM_ATTACHMENT_TYPE" enumIteName="附件类型">
+        <enumValue id="E09_21" enumValueId="1" enumValueCode="RDM_APPLY" enumValueName="申请单附件"></enumValue>
+        <enumValue id="E09_22" enumValueId="2" enumValueCode="RDM_APPLY_CHECK" enumValueName="申请单审核附件"></enumValue>
+        <enumValue id="E09_23" enumValueId="3" enumValueCode="RDM_PRO_CHECK" enumValueName="专业审核附件"></enumValue>
+        <enumValue id="E09_24" enumValueId="4" enumValueCode="RDM_DISPATCH_TASK" enumValueName="分发任务附件"></enumValue>
+        <enumValue id="E09_25" enumValueId="5" enumValueCode="RDM_RECORD" enumValueName="录入并反馈附件"></enumValue>
+        <enumValue id="E09_26" enumValueId="6" enumValueCode="RDM_SUMMERY" enumValueName="汇总录入资源附件"></enumValue>
+        <enumValue id="E09_27" enumValueId="7" enumValueCode="RDM_RECORD_CHECK" enumValueName="录入结果审核附件"></enumValue>
+        <enumValue id="E09_28" enumValueId="8" enumValueCode="RDM_SUMMERY_CHECK" enumValueName="录入审核汇总附件"></enumValue>
+    </enumItem>  
+    <enumItem id="RDM_APP_TYPE" enumItemId="602" enumItemCode="RDM_APP_TYPE" enumIteName="资源申请类型">
+        <enumValue id="E09_31" enumValueId="1" enumValueCode="RDM_IN_STORAGE" enumValueName="资源入库"></enumValue>
+        <enumValue id="E09_32" enumValueId="2" enumValueCode="RDM_IN_NETWORK" enumValueName="资源入网"></enumValue>
+        <enumValue id="E09_33" enumValueId="3" enumValueCode="RDM_CHANGE" enumValueName="资源变更"></enumValue>
+    </enumItem> 
+      	
+	<!-- 报表枚举类型E15(700) -->
+	<enumItem id="REPORT_CREATION_TYPE" enumItemId="700" enumItemCode="REPORT_CREATION_TYPE" enumIteName="报表定制类型">
+        <enumValue id="E15_1" enumValueId="1" enumValueCode="1" enumValueName="普通报表"></enumValue>
+        <enumValue id="E15_2" enumValueId="2" enumValueCode="2" enumValueName="自动报表"></enumValue>
+    </enumItem>
+    <enumItem id="TEMPLATE_CLASSIFY" enumItemId="701" enumItemCode="TEMPLATE_CLASSIFY" enumIteName="模板分类">
+        <enumValue id="E15_3" enumValueId="1" enumValueCode="1" enumValueName="宽带接入"></enumValue>
+        <enumValue id="E15_4" enumValueId="2" enumValueCode="2" enumValueName="节能减排"></enumValue>
+        <enumValue id="E15_5" enumValueId="3" enumValueCode="3" enumValueName="网运分析"></enumValue>
+        <enumValue id="E15_6" enumValueId="4" enumValueCode="4" enumValueName="工信部报表"></enumValue>
+        <enumValue id="E15_7" enumValueId="5" enumValueCode="5" enumValueName="安全中心报表"></enumValue>
+        <enumValue id="E15_8" enumValueId="6" enumValueCode="6" enumValueName="移动网资源统计"></enumValue>
+        <enumValue id="E15_9" enumValueId="7" enumValueCode="7" enumValueName="客户响应"></enumValue>
+        <enumValue id="E15_10" enumValueId="8" enumValueCode="8" enumValueName="网络资源与性能数据共享报表"></enumValue>
+        <enumValue id="E15_11" enumValueId="9" enumValueCode="9" enumValueName="性能数据共享报表"></enumValue>
+    </enumItem>
+    <enumItem id="TEMPLATE_TYPE" enumItemId="702" enumItemCode="TEMPLATE_TYPE" enumIteName="模版类型">
+    	<enumValue id="E15_12" enumValueId="1" enumValueCode="WEEK_REPORT" enumValueName="周报"></enumValue>
+        <enumValue id="E15_13" enumValueId="2" enumValueCode="MONTHLY_REPORT" enumValueName="月报"></enumValue>
+        <enumValue id="E15_14" enumValueId="3" enumValueCode="HEADQUARTER_MONTHLY_REPORT" enumValueName="月报(总部下发省份)"></enumValue>
+        <enumValue id="E15_15" enumValueId="4" enumValueCode="QUARTERLT_REPORT" enumValueName="季报"></enumValue>
+        <enumValue id="E15_16" enumValueId="5" enumValueCode="SEMIANNUAL_REPORT" enumValueName="半年报"></enumValue>
+        <enumValue id="E15_17" enumValueId="6" enumValueCode="HEADQUARTER_SEMIANNUAL_REPORT" enumValueName="半年报(总部专业上报)"></enumValue>
+        <enumValue id="E15_18" enumValueId="7" enumValueCode="ANNUAL_REPORT" enumValueName="年报"></enumValue>
+    </enumItem>
+    <enumItem id="REPORT_FORMAT" enumItemId="703" enumItemCode="REPORT_FORMAT" enumIteName="上报格式">
+    	<enumValue id="E15_19" enumValueId="1" enumValueCode="1" enumValueName="文件"></enumValue>
+        <enumValue id="E15_20" enumValueId="2" enumValueCode="2" enumValueName="格式化"></enumValue>
+    </enumItem>
+    <enumItem id="REPORT_TYPE" enumItemId="704" enumItemCode="REPORT_TYPE" enumIteName="上报类型">
+    	<enumValue id="E15_21" enumValueId="1" enumValueCode="NORMAL_REPORT" enumValueName="正常上报"></enumValue>
+        <enumValue id="E15_22" enumValueId="2" enumValueCode="ADDED_REPORT" enumValueName="补报"></enumValue>
+    </enumItem>
+    <enumItem id="REPORTS_TYPE" enumItemId="705" enumItemCode="REPORTS_TYPE" enumIteName="报表类型">
+    	<enumValue id="E15_23" enumValueId="1" enumValueCode="1" enumValueName="总部月报"></enumValue>
+        <enumValue id="E15_24" enumValueId="2" enumValueCode="2" enumValueName="省份月报"></enumValue>
+        <enumValue id="E15_25" enumValueId="3" enumValueCode="3" enumValueName="三级月分析"></enumValue>
+        <enumValue id="E15_26" enumValueId="4" enumValueCode="4" enumValueName="季报"></enumValue>
+        <enumValue id="E15_27" enumValueId="5" enumValueCode="5" enumValueName="周报"></enumValue>
+        <enumValue id="E15_28" enumValueId="6" enumValueCode="6" enumValueName="日报"></enumValue>
+        <enumValue id="E15_29" enumValueId="7" enumValueCode="7" enumValueName="拓扑图"></enumValue>
+    </enumItem>
+    <enumItem id="SUMMARY_DEFINITION" enumItemId="706" enumItemCode="SUMMARY_DEFINITION" enumIteName="汇总定义">
+    	<enumValue id="E15_30" enumValueId="1" enumValueCode="ADD_UP" enumValueName="叠加汇总"></enumValue>
+        <enumValue id="E15_31" enumValueId="2" enumValueCode="USER_DEFINED" enumValueName="自定义汇总"></enumValue>
+    </enumItem>
+    <enumItem id="SUMMARY_TYPE" enumItemId="707" enumItemCode="SUMMARY_TYPE" enumIteName="汇总类型">
+    	<enumValue id="E15_32" enumValueId="1" enumValueCode="1" enumValueName="SUM"></enumValue>
+        <enumValue id="E15_33" enumValueId="2" enumValueCode="2" enumValueName="COUNT"></enumValue>
+        <enumValue id="E15_34" enumValueId="3" enumValueCode="3" enumValueName="AVG"></enumValue>
+        <enumValue id="E15_35" enumValueId="4" enumValueCode="4" enumValueName="MAX"></enumValue>
+        <enumValue id="E15_36" enumValueId="5" enumValueCode="5" enumValueName="MIN"></enumValue>
+        <enumValue id="E15_37" enumValueId="6" enumValueCode="6" enumValueName="计算"></enumValue>
+        <enumValue id="E15_38" enumValueId="7" enumValueCode="7" enumValueName="其他"></enumValue>
+    </enumItem>
+    <enumItem id="MAIN_PROCESS_TYPE" enumItemId="708" enumItemCode="MAIN_PROCESS_TYPE" enumIteName="主流程状态">
+    	<enumValue id="E15_39" enumValueId="1" enumValueCode="1" enumValueName="待下发"></enumValue>
+        <enumValue id="E15_40" enumValueId="2" enumValueCode="2" enumValueName="待审核签发"></enumValue>
+        <enumValue id="E15_41" enumValueId="3" enumValueCode="3" enumValueName="数据上报"></enumValue>
+        <enumValue id="E15_42" enumValueId="4" enumValueCode="4" enumValueName="已撤销"></enumValue>
+        <enumValue id="E15_43" enumValueId="5" enumValueCode="5" enumValueName="已完成"></enumValue>
+    </enumItem>
+    <enumItem id="CHILD_PROCESS_TYPE" enumItemId="709" enumItemCode="CHILD_PROCESS_TYPE" enumIteName="子流程状态">
+    	<enumValue id="E15_44" enumValueId="1" enumValueCode="1" enumValueName="已撤销"></enumValue>
+        <enumValue id="E15_45" enumValueId="2" enumValueCode="2" enumValueName="待回执"></enumValue>
+        <enumValue id="E15_46" enumValueId="3" enumValueCode="3" enumValueName="待拟稿"></enumValue>
+        <enumValue id="E15_47" enumValueId="4" enumValueCode="4" enumValueName="待处理(已驳回)"></enumValue>
+        <enumValue id="E15_48" enumValueId="5" enumValueCode="5" enumValueName="待签发"></enumValue>
+        <enumValue id="E15_49" enumValueId="6" enumValueCode="6" enumValueName="待审批"></enumValue>
+        <enumValue id="E15_50" enumValueId="7" enumValueCode="7" enumValueName="已完成"></enumValue>
+    </enumItem>
+    
+    
+	<!-- 考核枚举类型E18(800) -->	
+	<enumItem id="INDEX_RESULT" enumItemId="800" enumItemCode="INDEX_RESULT" enumIteName="指标结果类型">
+        <enumValue id="E18_1" enumValueId="1" enumValueCode="PERCENTAGE" enumValueName="百分比"></enumValue>
+        <enumValue id="E18_2" enumValueId="2" enumValueCode="FIGURE" enumValueName="数值"></enumValue>
+    </enumItem>
+    <enumItem id="MONTH_TYPE" enumItemId="801" enumItemCode="MONTH_TYPE" enumIteName="月度类型">
+        <enumValue id="E18_9" enumValueId="1" enumValueCode="NATURAL_MONTH" enumValueName="自然月"></enumValue>
+        <enumValue id="E18_10" enumValueId="2" enumValueCode="UNNATURAL_MONTH" enumValueName="非自然月"></enumValue>
+    </enumItem>
+    <enumItem id="ARITHMETIC_TYPE" enumItemId="802" enumItemCode="ARITHMETIC_TYPE" enumIteName="算法类型">
+    	<enumValue id="E18_11" enumValueId="1" enumValueCode="GENERAL" enumValueName="通用算法"></enumValue>
+	    <enumValue id="E18_12" enumValueId="2" enumValueCode="LINEAR" enumValueName="中间线性分布算法"></enumValue>
+	    <enumValue id="E18_13" enumValueId="3" enumValueCode="DECREASE" enumValueName="递减扣分算法"></enumValue>
+	    <enumValue id="E18_14" enumValueId="4" enumValueCode="OTHER" enumValueName="其他算法"></enumValue>
+    </enumItem>
+    <enumItem id="KPI_CATEGORY" enumItemId="803" enumItemCode="KPI_CATEGORY" enumIteName="指标种类">
+    	<enumValue id="E18_15" enumValueId="1" enumValueCode="COMMON_KPI" enumValueName="普通指标"></enumValue>
+	    <enumValue id="E18_16" enumValueId="2" enumValueCode="COMPLEX_KPI" enumValueName="复合指标"></enumValue>
+	    <enumValue id="E18_17" enumValueId="3" enumValueCode="CHILD_KPI" enumValueName="子指标"></enumValue>
+    </enumItem>
+    <enumItem id="KPI_CYCLE_TYPE" enumItemId="804" enumItemCode="KPI_CYCLE_TYPE" enumIteName="周期">
+    	<enumValue id="E18_18" enumValueId="1" enumValueCode="1" enumValueName="月度"></enumValue>
+	    <enumValue id="E18_19" enumValueId="2" enumValueCode="2" enumValueName="季度"></enumValue>
+	    <enumValue id="E18_20" enumValueId="3" enumValueCode="3" enumValueName="半年"></enumValue>
+	    <enumValue id="E18_21" enumValueId="4" enumValueCode="4" enumValueName="年"></enumValue>
+    </enumItem>
+</root>

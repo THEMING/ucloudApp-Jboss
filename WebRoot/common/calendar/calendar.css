@@ -1,0 +1,143 @@
+ /* ========== 日期 =========== */
+.calendar {	width: 228px;_width: 236px; height: 320px;*height: 316px;_height: 320px; margin: 0px auto; margin-top: 0; border: 3px solid #d3d3dF;}
+.calendardiv_alpha { width: 228px;_width: 230px; height: 319px; *height: 320px; background: #d3d3d3; filter: alpha(opacity =     30);	opacity: 0.3; position: absolute;}
+.calendardiv { border: 1px solid #bbbbbb; width: 214px;*width: 214px;_width: 190px; height: 299px; *height: 302px; background: url(images/calendar_head_bg.jpg) repeat-x;font-family:"微软雅黑";font-size: 12px; position: relative; left: 6px; top: 6px;}
+.calendardivspan { color: #3f3f3f; font-family: "微软雅黑"; font-size: 14px; background: url(images/calendar_ico.png) 10px 10px no-repeat;	padding-left: 37px; line-height: 35px; font-weight: bold; text-shadow: 1px 1px 1px #ffffff; float: left;}
+.calendardiv i { background: url(images/calendar_close.png) no-repeat;	width: 23px; height: 13px; float: right; margin-top: 11px; cursor: pointer;z-index: 1000;}
+.calendardiv_nr { clear: both; padding: 10px;padding-bottom:10px;*padding-top:10px;*padding-bottom:14px; background: #FFF; z-index: 1000;}
+.calenderiframe { margin: 0; padding: 0; position: absolute; z-index: 2000; width: expression(this.previousSibling.offsetWidth); height: expression(this.previousSibling.offsetHeight); left: expression(this.previousSibling.offsetLeft); top: expression(this.previousSibling.offsetTop); display: expression(this.previousSibling.style.display);}
+.calendarPanelp { position: absolute; display: none; z-index: 9999; background-color: #FFFFFF; border: 1px solid #CCCCCC; width: 175px;	font-size: 12px;}
+.calendarFormp { margin: 2px;background:#d3d3d3;}
+.calendarTitleDiv {	border: 1px solid #bbbbbb; background: url(images/cal_title.jpg) repeat-x; font-size: 12px;}
+.caltable td { border:1px solid #CCCCCC;}
+.caltable {	border-collapse:collapse;}
+.calendarFormInput {background:#CCCCCC;readonly:expression(this.readOnly=true);}
+.calDivOnEvent {_width:190px; }
+
+.calendarTimeUp { font-size:12px;width:14px;height:14px; padding:0px;margin:0px; border:0px;background:url(images/cal_TimeUp.png) no-repeat; text-align:center;}
+.calendarTimeDown { font-size:12px;width:14px;height:14px; padding:0px;margin:0px; border:0px;background:url(images/cal_TimeDown.png) no-repeat; text-align:center;}
+.calendarPrevMonth {border: 1px solid #bcc0be;background:url(images/cal_prevMonth.png);width:16px;height:20px; cursor: pointer;}
+.calendarNextMonth {border: 1px solid #bcc0be;background:url(images/cal_nextMonth.png);width:16px;height:20px; cursor: pointer;}
+.calendarPrevYear {border: 1px solid #bcc0be;background:url(images/cal_prevYear.png);width:16px;height:20px; cursor: pointer;}
+.calendarNextYear {border: 1px solid #bcc0be;background:url(images/cal_nextYear.png);width:16px;height:20px; cursor: pointer;}
+.calendarRedButton {border: 0px; background:url(images/cal_RedButton.png);width:40px;height:20px;font-size:12px;color:#ffffff;cursor:pointer;}
+.calendarGrayButton {border: 0px; background:url(images/cal_GrayButton.png);width:40px;height:20px;font-size:12px;color:#333333;cursor:pointer;}
+
+.calendar     select{
+	visibility:visible !important;
+}
+
+.x-form-field-wrap {
+	 background-color:#ffffff !important;
+}
+
+/* 输入框 */
+/* .x-form-text-height-26px {
+	font-family: "宋体" !important;
+	font-size: 12px !important; 
+	color: #333333 !important;
+	text-align:left;
+	background-image: none !important;
+	background-color:#ffffff !important;
+    height: 26px !important;
+    line-height: 26px !important;
+    vertical-align: middle !important;
+    border: 1px solid #BBBBBB;
+	border-right: 0;
+	margin: 0px !important;
+	padding: 0px !important;
+	padding-left: 3px !important;
+	overflow: hidden !important;
+} */
+
+ .x-form-text-height-30px {
+	font-family: "宋体" !important;
+	font-size: 12px !important; 
+	color: #333333 !important;
+	text-align:left;
+	background-image: none !important;
+	background-color:#ffffff !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    vertical-align: middle !important;
+    border: 1px solid #BBBBBB;
+	border-right: 0 ;
+	margin: 0px !important;
+	padding-left: 3px !important;
+	padding-top: 0px !important;
+	overflow: hidden !important;
+}
+
+
+
+.ext-strict .x-form-border-0px{
+	border: 0px solid #B5B8C8;
+}
+
+
+
+/* 图片  */
+.x-form-field-wrap .x-form-date-trigger-height-26px {
+    background: url("images/calendarinputimg.jpg") no-repeat center center;
+    cursor: pointer;
+    height: 26px !important;
+    width: 28px  !important;
+    border: 1px solid #BBBBBB ;
+    border-left:0px ;
+    border-image: none;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    overflow: hidden !important;
+}
+
+.ext-ie7 .x-form-field-wrap .x-form-date-trigger-height-26px {
+	margin-top:1px !important;
+    height: 26px !important;
+}
+
+.x-form-field-wrap .x-form-date-trigger-height-30px {
+    background: url("images/calendarinputimg.jpg") no-repeat center center;
+    background-color:#ffffff !important;
+    cursor: pointer;
+    height: 30px !important;
+    width: 28px !important;
+    border: 1px solid #BBBBBB;
+    border-left:0px ;
+    border-image: none;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    overflow: hidden !important;
+}
+
+.ext-ie .x-form-field-wrap .x-form-date-trigger-height-30px {
+	margin-top:0px !important;
+    height: 31px !important;
+}
+.ext-ie7 .x-form-field-wrap .x-form-date-trigger-height-30px {
+	margin-top:1px !important;
+    height: 32px;
+}
+
+.ext-ie8 .x-form-field-wrap .x-form-date-trigger-height-30px {
+	margin-top:0px !important;
+    height: 30px !important;
+}
+
+.x-form-field-wrap .x-form-border-0px{
+	border: 0px solid #BBBBBB;
+}
+
+.calinputhiden {
+	color: #ffffff !important;
+}
+
+.x-form-invalid, textarea.x-form-invalid {
+    background-color: #FFFFFF;
+    border: 1px solid #CC3300 !important;
+}
+.calenderInputHidden{
+	color: #FFFFFF !important;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0);  opacity: 0;
+}

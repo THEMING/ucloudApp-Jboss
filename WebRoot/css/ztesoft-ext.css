@@ -1,0 +1,600 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 按钮 */
+.bluebutton {background:url(../images/df/bluebutton.png) no-repeat !important; border:0px; width:82px !important; height:26px; cursor:pointer; font-size:12px; color:#ffffff;font-family: "宋体";text-shadow:2px 2px 1px #000000;}
+.redbutton {background:url(../images/df/redbutton.png) no-repeat !important; border:0px; width:82px !important; height:26px; cursor:pointer; font-size:12px; color:#ffffff;font-family: "宋体";text-shadow:2px 2px 1px #000000;letter-spacing:10px;padding-left:18px;}
+.graybutton {background:url(../images/df/graybutton.png) no-repeat !important; border:0px; width:82px !important; height:26px; cursor:pointer; font-size:12px; color:#333333;font-family: "宋体";text-shadow:2px 2px 1px #ffffff;letter-spacing:10px;padding-left:18px;}
+.graybuttonB4 {background:url(../images/df/graybutton.png) no-repeat !important; border:0px; width:82px !important; height:26px; cursor:pointer; font-size:12px; color:#333333;font-family: "宋体";text-shadow:2px 2px 1px #ffffff;}
+/*不可用按键*/
+.disabledbutton {background:url(../images/df/graybutton.png) no-repeat; border:0px; width:82px; height:26px; cursor:pointer; font-size:12px; color:#ffffff;font-family: "宋体";text-shadow:2px 2px 1px #000000;}
+
+
+
+
+/* 红蓝按钮 样式*/
+.zs-btn-text{
+    font-size:12px !important;
+    color:#ffffff !important;
+    font-family: "宋体" !important;
+    text-shadow:2px 2px 1px #000000 !important;
+}
+/* 灰色按键*/
+.zs-btn-gray-text{
+    font-size:12px !important;
+    color:#333333 !important;
+    font-family: "宋体" !important;
+}
+
+/*button的背景*/
+.x-btn-ml,.x-btn-mr,.x-btn-mc,.x-btn-tc,.x-btn-tl,.x-btn-tr,.x-btn-bc,.x-btn-bl,.x-btn-br{
+    background:transparent;
+    line-height: 26px;
+}
+
+/*工具条按钮 样式*/
+.x-toolbar BUTTON{
+    cursor:pointer; font-size:12px; font-family: "宋体";
+/*     text-shadow:2px 2px 1px #000000; */
+}
+
+.x-toolbar TD{
+    cursor:pointer; font-size:12px; font-family: "宋体";
+    /* text-shadow:2px 2px 1px #000000; */
+}
+.x-toolbar  INPUT{
+	overflow:visible;
+}
+
+.x-toolbar-right-row{
+    vertical-align: middle;
+}
+
+
+/* combox选中状态背景色 */
+.x-combo-list-item,.x-combo-selected{
+    /*background:transparent url(../images/df/tree_node.gif) no-repeat !important;*/
+    background-position: left center !important;
+    padding-left: 5px;
+}
+.x-combo-selected{
+    background-color:#f4f4f4 !important;
+}
+/*****************************************************/
+/*这里开始处理网格*/
+
+/*单元格label样式*/
+.zs-x-label{
+    vertical-align: middle;
+    line-height: 30px;
+    height:30px ;
+    width:100%;
+    font-family: "宋体" ;
+    font-size:14;
+    font-weight:bolder;
+    color: #333333;
+    text-align:center;
+}
+
+/*form 的网格*/
+.x-table-layout{
+    border:solid #bbbbbb;
+    border-left-width:0px;
+    border-right-width:1px ;
+    border-top-width:1px ;
+    border-bottom-width:0px ;
+}
+
+.x-table-layout-cell{
+    border:solid #bbbbbb;
+    border-left-width:1px;
+    border-right-width:0px ;
+    border-top-width:0px ;
+    border-bottom-width:1px ;
+    
+}
+
+
+/*这里结束处理网格*/
+
+/*自定义form控件*/
+/*textfield*/
+.zs-x-form-field{
+	padding-left: 0px;
+    padding-right: 0px;
+    height: 26px !important;
+    line-height: 26px !important;
+    border: 1px !important; 
+}
+.zs-x-form-textarea{
+    border: 0px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+    margin:1px !important;	
+     line-height: 24px;
+     font-size:12px;
+     font-family:宋体 !important;
+}
+
+.x-tab-strip span.x-tab-strip-text{
+	font-family:微软雅黑;
+	font-size:14px;
+	color:#ffffff;
+	
+	white-space:nowrap;
+	font-weight :bold;
+	/*background-color:#d7191f !important;*/
+}
+
+.x-tab-strip-active span.x-tab-strip-text{
+	color:#333333;
+	
+}
+UL.x-tab-strip-top{
+	background-image:url("../js/ext/resources/images/silverCherry/tabs-header-bg.gif");
+	/*background-color:#d7191f !important;*/
+	padding-top:5px;
+	height:30px;
+}
+
+.x-tab-strip-top .x-tab-right{
+	padding-left:20px;
+}
+.x-tab-strip-top .x-tab-left{
+	padding-right:20px;
+}
+ul.x-tab-strip li{
+	margin-left:0px;
+} 
+/* .x-tab-strip-top .x-tab-strip-inner{
+	background-image:url("../js/ext/resources/images/silverCherry/tab_test.gif");
+} */
+
+/*
+textarea.x-form-field{
+	border: 0px !important;
+}
+*/
+.zs-x-form-number{
+    height: 26px;
+    line-height: 26px;
+    border: 0px !important;
+}
+
+
+.zs-pop-x-form-text{
+    background:transparent url(../images/df/search.png) no-repeat;
+    background-position: left center;
+    
+}
+.zs-date-x-form-text{
+    background:transparent url(../images/df/clock.png) no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: right center;
+}
+
+/* form field的阴影 */
+.x-form-field,.TEXTAREA.x-form-field{
+    line-height:1.5;
+    overflow: visible;
+}
+
+/*combo，date的图片*/
+.x-form-trigger{
+    border: 0px !important;
+    line-height:1.5;
+    overflow: auto;
+}
+
+/****************************************************************/
+
+/*单元格label样式*/
+.zs-x-label{
+    vertical-align: middle;
+    line-height: 30px;
+    height:30px ;
+    width:100%;
+    font-family: "宋体" ;
+    font-size:14 !important;
+    font-weight:bolder;
+    color: #333333;
+    text-align:center;
+}
+.x-form-label-center{
+	text-align:center;
+}
+/*****************************************************/
+/* 出错提示*/
+.x-form-invalid,textarea.x-form-invalid{
+    background:none ;
+    border-width:2px !important;
+    border-style: solid;
+    border-color: #f4c9cf; 
+}
+
+/* form的底色 */
+.x-panel-mc ,.x-panel-ml ,.x-panel-mr ,.x-panel-bc,.x-panel-bl,.x-panel-tl ,.x-panel-br{
+    background:transparent;
+    background-color:#ffffff;
+    border: 0px;
+    border-color: 0;
+    border-style: none;
+    
+}
+
+/*win标题栏重叠的两个div*/
+.x-window-tr,.x-window-tl{
+    background:none !important;
+    /*background:transparent url(../images/df/table_th.png);*/
+    /*background-color:#A8A8B7;*/
+}
+/*标题主体*/
+.x-window-tc{
+    background:none;
+    height: 40px;
+    vertical-align: bottom;
+}
+
+/*win主体重叠的两个div*/
+.x-window-ml,.x-window-mr{
+    background:none !important;
+    background-color: transparent;
+    
+}
+.x-window-header
+{
+    background:transparent url(../images/df/table_th.png);
+    height: 30px;
+    vertical-align: middle;
+    margin-top: 10px;
+    /*background-color:#A8A8B7;*/
+}
+/* window的标题*/
+.x-window-header-text{
+    font-weight:bolder;
+    font-family: 微软雅黑;
+    font-size: 14px !important;
+    color: #333333;
+    margin-left: 10px;
+}
+
+/* window的底色m为主体，b为button面板 */
+/*updated by Stephen Zhou 2013-5-22 add attribute font-family 微软雅黑*/
+.x-window-mc
+{
+    background:transparent !important;
+    background-color:#ffffff;
+    font-family:微软雅黑 !important;
+}
+/*按钮面板*/
+.x-panel-btns{
+    background:#ffffff !important;
+    background-color:#ffffff;
+    padding: 20px 0px 20px 0px !important;
+}
+/*底部*/
+.x-window-bc{
+    background:none;
+    height: 66px;
+    vertical-align: bottom;
+}
+/*win底部button面板两边*/
+.x-window-bl,.x-window-br{
+    background:none !important;
+}
+
+
+
+
+
+
+/* 面板边框 window由三个div又叠加而成，里面才放最终的控件，button面板则是另外一个部分。*/
+
+.x-window-mc,.x-panel,.x-window-body{
+    border: 0px !important;
+    border-left-style:none;
+    border-left-color:#ffffff;
+    background-color:#ffffff !important;
+     overflow-x: hidden !important; overflow-y: auto !important;
+}
+
+
+.x-resizable-handle-southwest,.x-resizable-handle-northeast,
+.x-resizable-handle-northwest,.x-resizable-handle-southeast,
+.x-resizable-handle-west,.x-resizable-handle-east{
+    width:0px;
+    background:transparent;
+    background-color:#ffffff;
+}
+
+/*panel的标题栏*/
+/* x-panel-tc,.x-panel-tl ,.x-panel-tl .x-panel-header */
+/*url(../images/df/panel_titile.png) no-repeat*/
+.x-panel-tc{
+    background: none !important;
+    background-color:#ffffff;
+}
+.x-panel-header,.x-panel-tc{
+    background:transparent none !important;
+    background-color: #ffffff;
+}
+.x-panel-header-text{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    vertical-align:middle;
+    color: #333333;
+}
+
+/*面板背景 */
+.x-panel-body{
+    background:transparent;
+    background-color:#ffffff;
+    border: 1px;
+    border-color: #eeeeee;
+    border-style: solid;
+}
+
+/* grid panel 的标题*/
+.zs-panel-header{
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.zs-panel-header-text{
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color:#333333;
+    vertical-align:middle;
+    font-weight: bold;
+    
+}
+
+
+/*grid 表头*/
+.zs-gird-header{
+    text-align:center;
+    font-weight:bolder;
+    font-size:14px;
+    font-family:微软雅黑;
+    vertical-align: middle;
+    height: 30px;
+}
+.zs-grid-header-sort{
+    background:transparent ;
+    height: 30px;
+    border:0px;
+    border-style:none;
+    width:24px;
+    vertical-align: middle;
+}
+
+/*鼠标移过或者点击表头的样式*/
+td.x-grid3-hd-over .x-grid3-hd-inner,td.sort-desc, 
+.x-grid3-hd-inner,td.sort-asc .x-grid3-hd-inner,td.x-grid3-hd-menu-open .x-grid3-hd-inner{
+    background:none  ;
+    padding: 0px;
+    line-height: 30px;
+}
+.x-grid3-hd-btn{
+    height: 30px !important;
+}
+
+/*工具条背景*/
+.x-toolbar{
+    background:transparent;
+    background-color:#f4f4f4;
+    border: none;
+    border-style: none;
+    vertical-align: middle;
+    height: 30px;
+    padding: 0!important;
+    
+}
+/* 工具条间隔 */
+.xtb-sep{
+    margin-left: 5px !important;
+}
+/* 工具条按钮鼠标移过样式*/
+.zs-link-over{
+    color: #d7191f !important;
+    text-decoration:underline;
+}
+/*链接颜色及下划线*/
+.zs-link-all{
+    color: #d7191f !important;
+    /*text-decoration:underline!important;*/
+}
+/*附件信息字体大小及位置*/
+.zs-attachment{
+	text-align:left!important;
+	font-size:12px;
+	font-family:宋体;
+}
+
+/* 表头背景*/
+.x-grid3-header{
+    background:transparent url(../images/df/table_th.png);
+    height:30px;
+}
+/* grid表格单元 */
+.x-grid3-row td{
+    height:30px;
+    font-size:12px;
+    font-family:宋体;
+    vertical-align: middle;
+    
+}
+
+.x-grid3-row-selected{
+    background:#eeeeee !important;border:1px dotted #a3bae9;
+} /*鼠标移动上面改变背景色*/   
+.x-grid3-row-over {          
+    border-color:red; /* */          
+    background-color:#fff1f1;/*鼠标移上去改变行的底色 #C9D8FC*/          
+    background-image:url(../images/default/grid/row-over.gif); 
+}
+/* 隔行背景色*/
+.x-grid3-row-alt{
+    background-color:#f4f4f4;
+}
+
+/*grid选择列checkbox*/
+.x-grid3-col-checker,.x-grid3-row-checker,.x-grid3-hd-checker{
+    vertical-align: middle !important;
+    background-position-y: center !important;
+    height: 28px;
+}
+.x-grid3-td-checker,.x-grid3-body,.x-grid3-td-numberer{
+    background:transparent !important;
+}
+
+
+
+/* window 关闭*/
+.x-tool-close{
+    background:transparent url(../images/df/closeX.png) no-repeat;
+    margin-right: 10px;
+    background-position-y: center;
+}
+/* 分页条首页和尾面*/
+.x-tbar-page-first,.x-tbar-page-last,.x-tbar-page-prev,.x-tbar-page-next{
+    background:transparent !important;
+    padding: 0px !important;
+}
+
+.x-tbar-page-go{
+    background:transparent url(../images/df/GO.png) no-repeat !important;
+}
+.x-toolbar div{
+    font-size:12px;
+    font-family:宋体;
+    vertical-align: middle;
+    color:#333333;
+}
+.zs-pagebar-size{
+    color:#D7191F;
+}
+
+.x-form-text-height-26px {
+	font-family: "宋体" !important;
+	font-size: 12px !important; 
+	color: #333333 !important;
+	text-align:left;
+	background-image: none !important;
+	background-color:#ffffff !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    vertical-align: middle !important;
+    border: 0px solid #BBBBBB;
+	border-right: 0;
+	margin: 0px !important;
+	padding: 0px 10px 0px 10px!important;
+/* 	padding-left: 3px !important;
+ */	overflow:hidden !important;
+ 	top:0px !important;
+}
+
+ .x-form-invalid, textarea.x-form-invalid {
+    background-color: #FFFFFF;
+    border: 1px solid #CC3300 !important;
+}
+
+/*panel标题
+*  created by Stephen Zhou 2013-5-24
+*/
+.x-panel-tc .x-panel-header{
+	font-family:微软雅黑;
+	background-image:none !important;
+	text-align:center;
+}
+.x-panel-tl .x-panel-header{
+	padding:20px 0px 0px 0px !important;
+}	
+.x-panel-header-text{
+	vertical-align:middle;
+	font-size:18px;
+	font-family:微软雅黑;
+}
+.x-panel-header{
+	padding:20px 0px 20px 0px !important;
+	text-align:center;
+}
+.x-panel-tr{
+	background-image:none !important;
+}
+/*按钮边距
+*/
+.x-panel-btns TD.x-toolbar-cell{
+	padding:0px 10px 0px 10px;
+}
+/*
+*grid序号居中
+*/
+.x-grid3-body .x-grid3-td-numberer .x-grid3-cell-inner
+{
+	text-align:center;	
+}
+/*解决IE9下标题错位*/
+.x-grid3-cell-inner,.x-grid3-hd-inner{
+	overflow:hidden;-o-text-overflow:ellipsis;
+	text-overflow:ellipsis;
+	padding:0px 0px 0px 0px !important;
+	white-space:nowrap;}
+/*
+*窗体底部间距10px
+*/
+.x-tab-strip-top .x-tab-strip-active .x-tab-right span.x-tab-strip-text{padding-bottom:10px;}
+
+
+
+/*.inputErrorInfoI{background:url(../resources/images/df/validate.png) no-repeat;width:16px;height:16px;float:left;}*/
+
+./* inputErrorInfo{line-height:16px;}
+.inputErrorInfoDiv{background:url(../resources/images/df/validate.png) no-repeat;width:16px;height:20px;float:left;}
+.inputErrorInfoSpan{font-size:12px;background:#f7d1d2;height:16px;line-height:16px;display:-moz-inline-box; display:inline-block;}
+ */
+ 
+ .inputErrorInfo{line-height:16px;}
+.inputErrorInfoDiv{background:url(../resources/images/df/validate.png) no-repeat;width:16px;height:20px;float:left;}
+.inputErrorInfoSpan{font-size:12px;background:#f7d1d2;line-height:16px;display:-moz-inline-box; display:inline-block;margin-bottom:4px;}
+  .x-table-layout-cell div{
+ *overflow:visible !important;
+ }
+ 
+  .x-table-layout-cell .x-panel-body{
+    *overflow:hidden !important;
+ }
+ 
+ .x-tree-node .x-tree-selected{
+    background-color : #E4E4F8;
+ }
+ 
+ /*****************************************************/
+
+/**********************下拉列表多选*******************************/
+
+.ux-multiplecombo-icon {
+    width:16px;
+    height:16px;
+    float:left;
+    display: inline-block;
+    cursor: pointer; 
+    background-position: -1px -1px ! important;
+    background-repeat:no-repeat ! important;
+}
+.ux-multiplecombo-icon-checked {
+    background: transparent url(../resources/images/df/checkbox-f.png);
+}
+.ux-multiplecombo-icon-unchecked {
+   background: transparent url(../js/ext/resources/images/default/menu/unchecked.gif);
+}
+.ux-multiplecombo-item-text{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 15px !important;
+    line-height: 15px !important;
+    border: 0px !important; 
+}

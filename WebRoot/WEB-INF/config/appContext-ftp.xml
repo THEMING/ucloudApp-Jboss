@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-lazy-init="true">
+
+	<bean id="ftpResource" class="com.ucloud.paas.appfw.pool.ftp.FtpResourceConfigBean">
+		<property name="resourceId" value="1"/>
+		<property name="server" value="10.123.1.62"/>
+		<property name="port" value="21"/>
+		<property name="username" value="admin"/>
+		<property name="password" value="123"/>
+		<property name="maxActive" value="2"/>
+		<property name="initialSize" value="2"/>
+		<property name="maxIdle" value="2"/>
+		<property name="minIdle" value="0"/>
+		<property name="maxWait" value="1000"/>
+		<property name="userHome" value="/ftproot"/>
+	</bean>
+</beans>

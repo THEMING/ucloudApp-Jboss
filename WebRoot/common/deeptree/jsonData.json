@@ -1,0 +1,17 @@
+{
+
+"TreeNode":{"@id":"1","@text":"中国联通","@hasChild":"1","@xmlSource":"","@defaultOpen":"0","@logoImagePath":"image/yg.png","@statusFlag":"","@title":"中国联通","@hrefPath":"","@target":"","@dbClick":"","@orderStr":"U901002","@returnValue":"","@isSelected":"","@indeterminate":"","@thisType":"Company","@detailedType":"Company","@isSubmit":"","@parentId":"","@childIds":"","@imageUrl":"image/yg.png","@busContent":"UCloud",
+			"TreeNode":[{"@id":"11","@text":"蓝海股份","@hasChild":"0","@xmlSource":"","@defaultOpen":"0","@logoImagePath":"","@statusFlag":"","@title":"蓝海股份有限公司","@hrefPath":"","@target":"","@dbClick":"","@orderStr":"U901002","@returnValue":"","@isSelected":"","@indeterminate":"","@thisType":"Company","@detailedType":"Company","@isSubmit":"","@parentId":"","@childIds":"","@imageUrl":"","@busContent":""},
+						{"@id":"12","@text":"电信事业部","@hasChild":"1","@xmlSource":"","@defaultOpen":"0","@logoImagePath":"","@statusFlag":"","@title":"welcome to ...","@hrefPath":"","@target":"","@dbClick":"","@orderStr":"U901002","@returnValue":"","@isSelected":"","@indeterminate":"","@thisType":"Company","@detailedType":"Company","@isSubmit":"","@parentId":"","@childIds":"","@imageUrl":"","@busContent":"",
+						"TreeNode":[{"@id":"121","@text":"行业开发部","@hasChild":"0","@xmlSource":"","@defaultOpen":"0","@logoImagePath":"","@statusFlag":"","@title":"欢迎来到销售部","@hrefPath":"","@target":"","@dbClick":"","@orderStr":"U901002","@returnValue":"","@isSelected":"","@indeterminate":"","@thisType":"Company","@detailedType":"Company","@isSubmit":"","@parentId":"","@childIds":"","@imageUrl":"","@busContent":""},
+									{"@id":"122","@text":"实施部","@hasChild":"1","@xmlSource":"","@defaultOpen":"0","@logoImagePath":"","@statusFlag":"","@title":"欢迎来到销售部","@hrefPath":"","@target":"","@dbClick":"","@orderStr":"U901002","@returnValue":"","@isSelected":"","@indeterminate":"","@thisType":"Company","@detailedType":"Company","@isSubmit":"","@parentId":"","@childIds":"","@imageUrl":"","@busContent":"",
+									"TreeNode":[{"@id":"1221","@text":"实施部1","@hasChild":"0","@xmlSource":"","@defaultOpen":"0","@logoImagePath":"","@statusFlag":"","@title":"欢迎来到销售部","@hrefPath":"","@target":"","@dbClick":"","@orderStr":"U901002","@returnValue":"","@isSelected":"","@indeterminate":"","@thisType":"Company","@detailedType":"Company","@isSubmit":"","@parentId":"","@childIds":"","@imageUrl":"","@busContent":""},
+												{"@id":"1222","@text":"实施部2","@hasChild":"0","@xmlSource":"","@defaultOpen":"0","@logoImagePath":"","@statusFlag":"","@title":"欢迎来到销售部","@hrefPath":"","@target":"","@dbClick":"","@orderStr":"U901002","@returnValue":"","@isSelected":"","@indeterminate":"","@thisType":"Company","@detailedType":"Company","@isSubmit":"","@parentId":"","@childIds":"","@imageUrl":"","@busContent":""}
+											    ]
+									}
+									]
+						}
+						]
+			}
+
+}

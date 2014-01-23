@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*-----------------tab---------------------*/	
+
+
+
+
+/*页卡边框样式*/
+.x-tab-panel-body{
+	border-color:#9c1215;
+	}
+
+/*未选中页卡样式*/
+
+
+
+/*页签下的线条样式*/
+
+/*选中块样式 */
+.x-tab-strip-top .x-tab-right, .x-tab-strip-top .x-tab-left, .x-tab-strip-top .x-tab-strip-inner{
+	background-image:url(../../resources/images/df/tabs-sprite.png);
+	}
+
+/*字体样式*/
+.x-tab-strip span.x-tab-strip-text{
+	color: #333;
+	font-size:14px;
+	text-shadow:1px 1px #fff;
+	font-weight: bold;
+	}
+	
+.x-tab-strip-active span.x-tab-strip-text{
+	color: #fff;
+	font-size: 14px;
+	text-shadow: 1px 1px #9c1215;
+	}
+	
+
+/*关闭按钮*/
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close{
+	background-image:url(../../resources/images/df/tab-close.png);
+	opacity:1.0;
+	}
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close:hover{
+	background-image:url(../../resources/images/df/tab-close.png);
+	opacity:1.0;
+	}
+
+
+
+
+/*头样式*/
+ul.x-tab-strip-top{
+	background-color:#f4f4f4;
+	background-image:url(../images.jsp);
+	border-bottom-color:#f4f4f4;
+	}
+	
+ul.x-tab-strip-top{
+	padding-top: 0px;
+	border-bottom:none;
+	}
+	
+.x-tab-panel-header, .x-tab-panel-footer{
+	border-color:#f4f4f4;
+	background-color:#9c1215;
+	}
+	
+.x-tab-panel-header{
+	padding-bottom: 1px;
+	}

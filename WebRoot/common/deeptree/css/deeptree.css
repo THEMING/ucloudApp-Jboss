@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+#footerDiv {
+    position: absolute;
+    width: 100%;
+    clear: both;
+    height: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    background-color:#d3d3d3;
+}
+
+.deeptree {
+    padding: 10px;
+    background-color: white;
+}
+
+.TreeNode {
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    height: 24px;
+    white-space:nowrap;
+
+}
+.TreeNode img {
+
+}
+
+.logoImage_left{
+}
+
+.logoImage_right{
+
+}
+
+.TreeNode span {
+    color: #000000;
+    margin-left: 0px;
+    border: 0px solid #FFFFFF;
+    padding: 3 3;
+    cursor:pointer;
+    padding-left:4px;
+    vertical-align: 4px;
+    *vertical-align: 1px;
+    line-height:18px;
+}
+.container {
+    padding-left: 14px;
+}
+
+/* span a {
+    color: black;
+    text-decoration: none;
+}
+
+span a.abandon {
+    color: #336699;
+    text-decoration: none;
+}
+
+span a.hidden {
+    color: #ACACAC;
+    text-decoration: none;
+}
+
+span.MouseOver {
+    border: 0px solid #999999;
+    cursor: pointer;
+}
+
+span.dragOver {
+    background-color: #BB7977;
+    color: #000000;
+    border: 0px solid #999999;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span.HighLight {
+    background-color: #e2d9d9;
+    color: #000000;
+    border: 0px solid #999999;
+}
+
+span.load {
+    color: #aaaaaa;
+} */
+
+.lightbox{z-index:-1;padding:7px;background-color:#6e6e6e;filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6; position:absolute; top:0px; left:0px;} 
+
+/*distributetree add*/
+/*begin*/
+.box{ width:880px; height:476px;top:0;left:0;position:absolute;z-index:9999;}
+.item{ width:870px; height:35px; background-image: url(../image/tanchu_top_t.jpg); background-repeat: repeat-x; font-family:"宋体"; font-size:0.875em; font-weight:bold; color:#333333; line-height:35px; padding-left:10px; border-bottom:1px solid #bbbbbb;}
+.delete{ width:12px; height:12px; float:right; margin-top:11px; margin-right:14px; background-image: url(../image/delete01.png);cursor: pointer; }
+.content{ width:869px; height:322px; padding-top:0px; padding-left:11px; background:#fff; }
+.left{ width:396px; height:320px; float:left; border:1px solid #bbbbbb;}
+.select_type{ width:306px; height:23px;  line-height:26px; font-family:"宋体"; font-size:12px; color:#666; padding-left:5px; float:left; }
+.xl{ width:7px; height:10px; margin-right:10px; margin-top:6px; float:right; background-image: url(../image/xl_03.jpg);  }
+.inputKey{ width:386px; height:23px; font-family:"宋体"; font-size:12px; color:#3f3f3f; line-height:26px;padding-left:5px; float:left;}
+.search{ width:83px; height:26px; margin-left:38px; margin-top:0px; margin-right:5px; background-image:  url(../image/button3.png); float:left;}
+.left_unit{ width:396px; height:320px; float:left; }
+.left_scrol{ width:13px; height:302px; border-left:1px solid #bbbbbb; float:left;}
+.mid{ width:66px; height:220px; *height:322px;padding-top:100px; float:left; border-top:1px solid #bbbbbb; border-bottom:1px solid #bbbbbb;}
+.btn01{ width:50px; height:26px; margin-top:15px; margin-left:8px;background-image: url(../image/distributetreebtn.png); cursor:pointer;}
+.btn02{ width:50px; height:26px; margin-left:8px; margin-top:15px;background-image: url(../image/distributetreebtn.png); cursor:pointer;}
+.btn03{ width:50px; height:26px; margin-left:8px; margin-top:15px;background-image: url(../image/distributetreebtn.png); cursor:pointer;}
+.characters1{ font-size:12px; color:#333333; font-family:"宋体"; padding-left:14px; line-height:27px; cursor:pointer;} 
+.del_image{ width:16px; height:16px; background-image: url(../image/cancel.png);cursor: pointer;}
+.right{ width:391px; height:320px; float:left; border:1px solid #bbbbbb; font-size:12px;}
+.tab{ width:391px; height:20px; border-bottom:1px solid #bbbbbb; 
+ background-color:#f4f4f4;}
+.tabContent01{ width:391px; height:85px;border-bottom:1px solid #bbbbbb; overflow:auto; }
+.tabContent02{width:391px; height:85px; border-bottom:1px solid #bbbbbb; overflow:auto;}
+.foot{ width:880px; height:74px; background:#fff;  *width:870px;}
+.btn_yes{ width:83px; height:26px; margin-left:348px; float:left; margin-top:20px; background-image: url(../image/butqd.png);cursor: pointer; }
+.btn_no{ width:83px; height:26px; margin-left:18px; float:left; margin-top:20px; background-image: url(../image/button3.png);cursor: pointer; }
+.distrilightbox{z-index:-1;padding:7px;background-color:#6e6e6e;filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6; position:absolute; top:-7px; left:-7px;}
+
+.searchhead{ width:869px; height:40px; padding-top:7px; padding-left:11px; background:#fff; }
+.searchbtn{ width:50px; height:26px; margin-left:38px; margin-top:0px; margin-right:5px; background-image:url(../image/distributetreebtn.png); float:left; cursor:pointer;}
+.searchtab{width:300px;height:300px;background-color:#fff; position:absolute; top:68px; left:400px; border:1px solid #bbbbbb;*width:300px;}
+.table_ser {padding: 0px;font-family: "微软雅黑";border-collapse:collapse; font-size:12px;}
+.table_ser th {line-height: 25px; height:25px;background: url(../../../resources/images/df/table_th.png) repeat-x;font-size: 14px;color: #333333;border: 1px solid #bbbbbb;white-space:nowrap; text-align:center;}
+.table_ser td {line-height: 25px; height:25px; border: 1px solid #eeeeee;min-height:25px;padding-left:3px;padding-right:3px;cursor:pointer;}
+.td_ser {text-align: left;padding-left: 3px;height:25px; font:12px "宋体"; color:#333; padding-left:3px; padding-right:3px;line-height:25px;}
+.searchbtn1 { width:50px; height:26px; position: absolute; bottom:10px; left:90px; background-image:url(../image/distributetreebtn.png); cursor:pointer;}
+.searchbtn2 { width:50px; height:26px; position: absolute; bottom:10px; left:160px; background-image:url(../image/distributetreebtn.png); cursor:pointer;}
+.hidtd_ser {text-align:left;padding-left:0px !important ;height:0px !important;  padding-left:0px !important; padding-right:0px !important ;line-height:0px !important; border:0 !important;}
+.selected {background-color:#309bfb;}
+.tree_Page_digg { float:left; padding: 5px 80px; *position:relative; font-size:12px;}
+.tree_Page_digg A {COLOR: #3f3f3f;margin: 0 5px;}
+.tree_Page_digg A:hover {COLOR: #d7191f;}
+.tree_Page_digg A.disabled {COLOR: #a8a8b7;margin: 0 5px;}
+.tree_Page_digg A.disabled:hover {COLOR: #d7191f;}
+.div_table_ser { width:300px; height:250px; overflow:auto; border-bottom:1px solid #eeeeee; padding-top:0px !important; margin-top:0px !important;}
+
+/*下拉框*/
+.tree_sel_wrap {
+    width: 200px;height: 22px;border: 1px solid #BBBBBB;cursor: pointer;position: relative; 
+    background:url(../../../resources/images/df/select.png) no-repeat right center transparent !important;font-family: "宋体";
+}
+.tree_sel_wrap span {
+    line-height: 22px;*line-height: 22px;padding-left: 2px;
+    font-family: "宋体";
+    color: #666;
+    font-size: 12px;color:#3f3f3f ;
+    position: relative ;    
+}
+.tree_sel_wrap select {
+    width: 100%;height: 22px;*height:22px;  font-size: 12px; color: #3f3f3f;
+    position: absolute;
+    padding: 0;cursor: pointer;top: 0;left: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0);  opacity: 0; 
+    margin:0px;*margin-top:5px;margin-right: 0px;margin-left:0px;margin-bottom: 0px;
+}
+
+/* ========== 页卡 ========== */
+.treedfWinTab {border:0px;margin:0px;width:100%;}
+.treedfWinTabTable { height:36px; width: auto;border-collapse:collapse;font-family: "微软雅黑";font-size: 12px; cursor: pointer; margin-left:5px;}
+.treedfWinTabHead{ width:855px; background-image: url(../../../resources/images/df/headMiddle.jpg); background-repeat: repeat-x; height:36px; border-left:1px solid #7c1317;border-right:1px solid #7c1317;}
+.treedfWinTabHead2 { height:36px; font: bold 14px '宋体'; color:#333;padding:0px;}
+.treedfWinTabHead1 { padding-left:5px;padding-right:5px;height:36px;float: left; margin-right:1px; font: bold 14px '宋体'; color:#fff;  list-style: none; -moz-user-select: none; -khtml-user-select: none; cursor: pointer; text-align:center;}
+.treedfWinTabHead1, .treedfWinTabHead2 {letter-spacing:1px;font-weight:bold;height: 36px;line-height:36px;}
+.treedfWinTabBody {margin-top: 0px;margin-left:0px;width:auto;min-height: 100px;border-top:none;}
+.treedfWinTabHead2 .treeHeadSetLeft{ background-image:url(../../../resources/images/df/headSetLeft.jpg); float:left; width:11px; height:36px;margin-top:-1px;}
+.treedfWinTabHead2 .treeHeadSetRight{ background-image:url(../../../resources/images/df/headSetRight.jpg); float:left; width:12px; height:36px;margin-top:-1px;}
+.treedfWinTabHead2 .treeHeadSet{ background-image:url(../../../resources/images/df/headSetMid.jpg); float:left;background-repeat:repeat-x; height:36px;margin-top:-1px;}
+/*end*/
+
+/* ========== 字体变色 ========== */
+.treenodeSpan {
+    color: red !important;
+}

@@ -1,0 +1,76 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="../../common/springmvc-jquery/include.jspf"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="<%=path%>/js/ext/resources/css/ext-all.css" />
+	<link rel="stylesheet" type="text/css" href="<%=path%>/js/ext/resources/css/xtheme-silverCherry.css" />    
+	<link rel="stylesheet" type="text/css" href="<%=path%>/js/ext/examples/shared/examples.css" />
+    <link type="text/css" rel="stylesheet" href="<%=path%>/css/ztesoft-ext.css" />  
+    <link type="text/css" rel="stylesheet" href="<%=path%>/css/df.css" />
+    <!-- 日期控件css -->
+    <link rel="stylesheet" type="text/css" href="<%=path%>/common/calendar/calendar.css" />
+    <!-- combo控件引入文件 
+	<script type="text/javascript" src="<%=path%>/css/extselect3.css"></script>-->
+	
+    <script language="javascript">
+        var PATH = "<%=path%>";
+    </script>
+
+    <!-- 引入气泡改写方法 -->
+   <script type="text/javascript" language="javascript" src="<%=path%>/js/common/df.js"></script>
+    
+    <script type="text/javascript" language="javascript" src="<%=path%>/js/ext/adapter/ext/ext-base-debug.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext/ext-all-debug.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext/source/locale/ext-lang-zh_CN.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ztesoft/ztesoft.ajax.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ztesoft/ztesoft.grid.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ztesoft/ztesoft.popup.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext/ux/Spinner.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext/ux/SpinnerField.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ext/ux/DateTimeField.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ztesoft/ztesoft.combox.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ztesoft/ztesoft.button.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ztesoft/ztesoft.msg.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ztesoft/ztesoft.form.js"></script>
+	
+	<script type="text/javascript" language="javascript" src="<%=path%>/js/ztesoft/ztesoft.mulCombox.js"></script>
+    
+    <!-- 日期控件引入文件 -->
+	<script type="text/javascript" language="javascript" src="<%=path%>/common/calendar/extSpinner.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/common/calendar/extSpinnerField.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/common/calendar/extDateTimeField.js"></script>
+	<script type="text/javascript" language="javascript" src="<%=path%>/common/calendar/calendar_ext321.js"></script>
+    
+
+    <script language="javascript">
+        var PATH = "<%=path%>";
+        //LOGON_ACCOUNT_JSP
+        var jstr = '<%=request.getSession().getAttribute("LOGON_ACCOUNT_JSP")%>';
+        var logonAccount = Ext.util.JSON.decode(jstr);
+        var userStr = '<%=request.getSession().getAttribute("LOGON_USER_JSP")%>';
+        var user = Ext.util.JSON.decode(userStr);
+        var orgStr = '<%=request.getSession().getAttribute("LOGON_ORG_JSP")%>';
+        var org = Ext.util.JSON.decode(orgStr);
+        
+        var session = {};
+        session.logonAccount = logonAccount;
+        session.user = user;
+        session.org = org;
+        /**文件上传相关参数**/
+      //历史记录
+        var uploadfinishfile=new Array();
+        //刚上传的文件信息
+        var uploadfileInfo=new Array();
+        //刚上传的文件数目
+        var fileUploadCount=0;
+        //文件上传字符串拼接
+        var _uploadText = "";
+        
+    </script>
+</head>
+</html>

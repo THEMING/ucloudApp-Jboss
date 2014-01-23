@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.button_add {
+    background-image:url(images/add.png) !important;
+ }
+.button_upload {
+    background-image:url(images/upload.png) !important;
+ }
+.button_delete {
+    background-image:url(images/delete.png) !important;
+ }
+.button_cancel {
+    background-image:url(images/cancel.png) !important;
+ }
